@@ -94,10 +94,10 @@ the plugin\'s generator will write some `main.html` for corresponding main.{js,t
 - e.g. element-plus: https://element-plus.gitee.io/#/en-US/component/custom-theme
 
 ```scss
-/* 改变主题色变量 */
+/* theme color */
 $--color-primary: teal;
 
-/* 改变 icon 字体路径变量，必需 */
+/* icon font path, required */
 $--font-path: '~element-plus/lib/theme-chalk/fonts'; // changed to 'path/to/node_modules/element-plus/lib/theme-chalk/fonts;'
 
 @import "~element-plus/packages/theme-chalk/src/index"; // remove '~', css-loader support it
@@ -105,5 +105,10 @@ $--font-path: '~element-plus/lib/theme-chalk/fonts'; // changed to 'path/to/node
 
 ### Vite Build Support ?
 - Currently only support vite dev for development, you should still use yarn build(vue-cli-service build)
-- But you can use `BUILD=on MODERN=on yarn dev` to invoke vite build(with or without legecy build)
+- But you can use `BUILD=true MODERN=true yarn dev` to invoke vite build(with or without legecy build)
 
+
+## Relevant
+- [vite-plugin-env-compatible](https://github.com/IndexXuan/vite-plugin-env-compatible)
+- [vite-plugin-vue-cli](https://github.com/IndexXuan/vite-plugin-vue-cli)
+- [vite-plugin-mpa](https://github.com/IndexXuan/vite-plugin-mpa)

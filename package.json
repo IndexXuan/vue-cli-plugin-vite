@@ -1,6 +1,6 @@
 {
   "name": "vue-cli-plugin-vite",
-  "version": "0.0.1-dev.0",
+  "version": "0.0.4",
   "description": "out-of-box vite dev for vue-cli project",
   "main": "index.js",
   "author": "indexxuan@gmail.com",
@@ -19,17 +19,19 @@
   ],
   "dependencies": {
     "vite": "2.0.1",
-    "vite-plugin-env-compatible": "0.0.1",
+    "vite-plugin-env-compatible": "0.0.2",
+    "vite-plugin-vue-cli": "0.0.2",
     "vite-plugin-vue2": "1.2.1",
-    "vite-plugin-mpa": "0.0.1",
+    "vite-plugin-mpa": "0.0.3",
     "vite-plugin-legacy": "2.1.0"
   },
   "devDependencies": {
     "@commitlint/cli": "7.2.0",
     "@commitlint/config-conventional": "7.1.2",
+    "@types/node": "14.14.25",
     "commitizen": "2.10.1",
     "cz-customizable": "5.2.0",
-    "@types/node": "14.14.25",
+    "lint-staged": "10.5.4",
     "yorkie": "2.0.0"
   },
   "prettier": {
@@ -58,8 +60,7 @@
   },
   "lint-staged": {
     "**/**.{ts,js,json}": [
-      "prettier --write",
-      "git add"
+      "prettier --write"
     ]
   }
 }
