@@ -48,7 +48,6 @@ const plugins = [
   vueCli(vueConfig),
   createVuePlugin(),
   useMPA ? mpa() : undefined,
-  // 可选，危险，谨慎使用
   !modernBuild
     ? legacy({
         // https://babeljs.io/docs/en/babel-preset-env#ignorebrowserslistconfig
