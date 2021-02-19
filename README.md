@@ -95,7 +95,7 @@ the plugin\'s generator will write some `main.html` for corresponding main.{js,t
 |     Entry Files                  | 1. main.{js,ts}.    | 1. *.html          |
 |     Config File                  | 1. vue.config.js    | 1. vite.config.ts. <br />2. support use --config to locate |
 |     MPA Support                  | 1. native support by `options.pages`. <br />2. with history rewrite support | 1. native support by `rollupOptions.input` |
-|     Special Syntax               | 1. require.context(by webpack) <br />2. use `~module/dist/index.css`(support by `css-loader`) | 1. import.meta.glob/globEager <br />2. native support by vite, use 'module/dist/index.css' directly  |
+|     Special Syntax               | 1. require.context(by webpack) <br />2. use `~module/dist/index.css`(support by `css-loader`) <br />3. module.hot for HMR | 1. import.meta.glob/globEager <br />2. native support by vite, use 'module/dist/index.css' directly <br />3. import.meta.hot for HMR  |
 
 
 ## Milestone
@@ -116,6 +116,7 @@ the plugin\'s generator will write some `main.html` for corresponding main.{js,t
         - ✅ https - resolved from `devServer.https`
         - ✅ open - resolved from `process.platform === 'darwin' || devServer.open`
         - ✅ proxy - resolved from `devServer.proxy`
+        - ❌ before - maybe we cannot
     - ✅ vite#build
         - ✅ outDir - resolved from vue.config.js#`outputDir`
         - ✅ cssCodeSplit - resolved from `css.extract`
@@ -125,7 +126,7 @@ the plugin\'s generator will write some `main.html` for corresponding main.{js,t
     - ✅ same development experience and build result
 - ⬜️ Special Synatax
     - ✅ '~module' syntax for Import CSS (will not support, we have workaround)
-    - ⬜️ require.context compatible (WIP)
+    - ✅ require.context compatible
 
 ## Examples
 - [simple vue-cli SPA project](https://github.com/IndexXuan/vue-cli-plugin-vite/tree/main/examples/my-mpa-ts-app)
