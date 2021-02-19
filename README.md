@@ -1,6 +1,6 @@
-# Vite for vue-cli projects
+# Use Vite Today
 
-> Use Vite Today, out-of-box for vue-cli projects without any codebase modifications.
+> out-of-box for vue-cli projects without any codebase modifications.
 
 ## ToC
 - [Usage](#usage)
@@ -10,6 +10,7 @@
     - [Compatibility](#compatibility)
     - [Differences between vue-cli and vite](#differences-between-vue-cli-and-vite)
 - [Milestone](#milestone)
+- [Examples](#examples)
 - [Troubleshooting](#troubleshooting)
     - [Vite Build Support](#vite-build-support)
     - [Custom Style missing fonts](#custom-style-missing-fonts)
@@ -122,6 +123,12 @@ the plugin\'s generator will write some `main.html` for corresponding main.{js,t
     - ✅ '~module' syntax for Import CSS (will not support, we have workaround)
     - ⬜️ require.context compatible (WIP)
 
+## Examples
+- [simple vue-cli SPA project]()
+- [simple vue-cli MPA TypeScript project]()
+- [(WIP)complex chrisvfritz/vue-enterprise-boilerplate project]()
+
+you can clone/fork this repo, under examples/*
 
 ## Troubleshooting
 
