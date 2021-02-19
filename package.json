@@ -13,6 +13,9 @@
     "type": "git",
     "url": "git@github.com:IndexXuan/vue-cli-plugin-vite.git"
   },
+  "bugs": {
+    "url": "https://github.com/IndexXuan/vue-cli-plugin-vite/issues"
+  },
   "keywords": [
     "vue-cli-plugin",
     "vite"
