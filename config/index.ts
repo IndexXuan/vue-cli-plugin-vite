@@ -31,10 +31,13 @@ try {
 //    vite: {
 //      alias: Record<string, string>,
 //      plugins: Plugin[],
+//      supportRequireContext: true,
+//      vitePluginVue2Options: { jsx: true }
 //  },
 //},
 
 const pluginOptions = vueConfig.pluginOptions || {}
+const viteOptions = pluginOptions.vite || {}
 const alias = (pluginOptions.vite && pluginOptions.vite.alias) || ({} as Record<string, string>)
 const extraPlugins = (pluginOptions.vite && pluginOptions.vite.plugins) || ([] as Plugin[])
 
@@ -43,7 +46,7 @@ const useMPA = Boolean(vueConfig.pages)
 const plugins = [
   envCompatible(),
   vueCli(vueConfig),
-  createVuePlugin(),
+  createVuePlugin(viteOptions.vitePluginVue2Options),
   useMPA ? mpa() : undefined,
   ...extraPlugins,
 ].filter(Boolean)
@@ -52,8 +55,9 @@ const plugins = [
 export default defineConfig({
   resolve: {
     alias: {
-      ...alias,
       '@': path.resolve(process.cwd(), 'src'),
+      // high-priority with use provided alias
+      ...alias,
     },
   },
   plugins,
