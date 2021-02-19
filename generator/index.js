@@ -4,7 +4,7 @@ module.exports = (api, options = {}) => {
   // 1. extend package
   const pkg = {
     scripts: {
-      dev: 'node ./bin/vite_dev',
+      vite: 'node ./bin/vite',
     },
   }
   api.extendPackage(pkg)
@@ -15,6 +15,6 @@ module.exports = (api, options = {}) => {
   // 3. logger
   api.onCreateComplete(() => {
     writeMainDotHtml4EachEntry(api.resolve('.'))
-    api.exitLog('use vite for development by `yarn dev`', 'info')
+    api.exitLog('use vite for development by `yarn vite`', 'info')
   })
 }

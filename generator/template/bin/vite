@@ -5,12 +5,8 @@ const { spawn } = require('child_process')
 const configPath = require.resolve('vue-cli-plugin-vite/config/index.ts')
 const cwd = path.resolve(__dirname, '../')
 
-const MODE = process.env.MODE
 const params = [
   `${process.env.BUILD ? 'build' : ''}`,
-  `${
-    process.env.BUILD ? `--mode=${MODE || 'production'}` : `--mode=${MODE || 'development'}`
-  }`,
   process.env.VITE_DEBUG ? '--debug' : '',
   '--config',
   `${configPath}`,

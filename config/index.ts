@@ -1,10 +1,9 @@
 import path from 'path'
 import { defineConfig, Plugin } from 'vite'
+import { createVuePlugin } from 'vite-plugin-vue2'
 import envCompatible from 'vite-plugin-env-compatible'
 import vueCli, { VueCliOptions } from 'vite-plugin-vue-cli'
-import { createVuePlugin } from 'vite-plugin-vue2'
 import mpa from 'vite-plugin-mpa'
-import legacy from 'vite-plugin-legacy'
 
 // vue.config.js
 let vueConfig: VueCliOptions = {}
@@ -41,23 +40,11 @@ const extraPlugins = (pluginOptions.vite && pluginOptions.vite.plugins) || ([] a
 
 const useMPA = Boolean(vueConfig.pages)
 
-const modernBuild = process.env.MODERN !== 'false'
-
 const plugins = [
   envCompatible(),
   vueCli(vueConfig),
   createVuePlugin(),
   useMPA ? mpa() : undefined,
-  !modernBuild
-    ? legacy({
-        // https://babeljs.io/docs/en/babel-preset-env#ignorebrowserslistconfig
-        ignoreBrowserslistConfig: false,
-        // When true, core-js@3 modules are inlined based on usage.
-        // When false, global namespace APIs (eg: Object.entries) are loaded
-        // from the Polyfill.io server.
-        corejs: true,
-      })
-    : undefined,
   ...extraPlugins,
 ].filter(Boolean)
 
