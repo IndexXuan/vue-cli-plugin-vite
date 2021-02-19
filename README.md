@@ -2,6 +2,10 @@
 
 > out-of-box for vue-cli projects without any codebase modifications.
 
+<p align="center">
+  <img src="./logo.png" alt="logo" title="logo" width="300px" />
+</p>
+
 ## ToC
 - [Usage](#usage)
 - [Motivation](#motivation)
@@ -124,9 +128,9 @@ the plugin\'s generator will write some `main.html` for corresponding main.{js,t
     - ⬜️ require.context compatible (WIP)
 
 ## Examples
-- [simple vue-cli SPA project]()
-- [simple vue-cli MPA TypeScript project]()
-- [(WIP)complex chrisvfritz/vue-enterprise-boilerplate project]()
+- [simple vue-cli SPA project](https://github.com/IndexXuan/vue-cli-plugin-vite/tree/main/examples/my-mpa-ts-app)
+- [simple vue-cli MPA TypeScript project](https://github.com/IndexXuan/vue-cli-plugin-vite/tree/main/examples/my-mpa-ts-app)
+- [(WIP)complex chrisvfritz/vue-enterprise-boilerplate project](https://github.com/chrisvfritz/vue-enterprise-boilerplate)
 
 you can clone/fork this repo, under examples/*
 
