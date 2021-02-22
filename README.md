@@ -6,6 +6,7 @@
   <img src="./logo.png" alt="logo" title="logo" width="300px" />
 </p>
 
+
 ## ToC
 - [Usage](#usage)
 - [Motivation](#motivation)
@@ -13,15 +14,24 @@
 - [Underlying principle](#underlying-principle)
     - [Compatibility](#compatibility)
     - [Differences between vue-cli and vite](#differences-between-vue-cli-and-vite)
-- [Milestone](#milestone)
+- [Milestones](#milestones)
 - [Examples](#examples)
 - [Troubleshooting](#troubleshooting)
+    - [Some module response 404 not found](#some-module-response-404-not-found)
     - [Vite Build Support](#vite-build-support)
     - [Custom Style missing fonts](#custom-style-missing-fonts)
-    - [jsx support](#jsx-support)
-    - [require.context is not defined](#require.context-is-not-defined)
+    - [JSX support](#jsx-support)
     - [Vue3 support](#vue3-support)
+- [Benefits](#benefits)
+    - [Best development-experience right now](#best-development-experience-right-now)
+    - [Migration to vite smoothly](#migration-to-vite-smoothly)
+    - [Lint the codebase](#lint-the-codebase)
 - [Relevant Vite Plugins](#relevant-vite-plugins)
+    - [vite-plugin-vue2@underfin](https://github.com/underfin/vite-plugin-vue2)
+    - [vite-plugin-env-compatible](https://github.com/IndexXuan/vite-plugin-env-compatible)
+    - [vite-plugin-vue-cli](https://github.com/IndexXuan/vite-plugin-vue-cli)
+    - [vite-plugin-mpa](https://github.com/IndexXuan/vite-plugin-mpa)
+
 
 ## Usage
 ```sh
@@ -37,7 +47,7 @@ the plugin\'s generator will write some `main.html` for corresponding main.{js,t
 - Why not we use them together ?
 
 
-## Options
+## [Options](https://github.com/IndexXuan/vue-cli-plugin-vite/blob/main/config/options.ts)
 ```js
 // vue.config.js
 {
@@ -45,7 +55,7 @@ the plugin\'s generator will write some `main.html` for corresponding main.{js,t
   pluginsOptions: {
     vite: {
       /**
-       * will deprecated when we can auto resolve alias from vue.config.js(WIP)
+       * will deprecated when we can auto resolve alias from vue.config.js (WIP)
        * @ is setted by the plugin, you can set others used in your projects, like @components
        * Record<string, string>
        * @default {}
@@ -59,11 +69,8 @@ the plugin\'s generator will write some `main.html` for corresponding main.{js,t
        */
       plugins: [], // other vite plugins list, will be merge into this plugin\'s underlying vite.config.ts
       /**
-       * @default false
-       */
-      supportRequireContext: boolean
-      /**
        * you can enable jsx support by setting { jsx: true }
+       * @see https://github.com/underfin/vite-plugin-vue2#options
        * @default {}
        */
       vitePluginVue2Options: {}
@@ -95,19 +102,19 @@ the plugin\'s generator will write some `main.html` for corresponding main.{js,t
 |     Entry Files                  | 1. main.{js,ts}.    | 1. *.html          |
 |     Config File                  | 1. vue.config.js    | 1. vite.config.ts. <br />2. support use --config to locate |
 |     MPA Support                  | 1. native support by `options.pages`. <br />2. with history rewrite support | 1. native support by `rollupOptions.input` |
-|     Special Syntax               | 1. require.context(by webpack) <br />2. use `~module/dist/index.css`(support by `css-loader`) <br />3. module.hot for HMR | 1. import.meta.glob/globEager <br />2. native support by vite, use 'module/dist/index.css' directly <br />3. import.meta.hot for HMR  |
+|     Special Syntax               | 1. require(by webpack) <br /> 2. require.context(by webpack) <br />2. use `~some-module/dist/index.css`(by `css-loader`) <br />3. module.hot for HMR | 1. import.meta.glob/globEager <br />2. native support by vite, use 'module/dist/index.css' directly <br />3. import.meta.hot for HMR  |
 
 
-## Milestone
+## Milestones
 - ✅ Plugin
     - ✅ we can do nothing but rewrite corresponding vite-plugin, most code and tools can be reused 
 - ✅ Environment Variables Compatible
-    - ✅ load to process.env.${PREFIX}_XXX
+    - ✅ load to process.env.XXX (all env with or without prefix will be loaded)
     - ✅ recognize `VUE_APP_` prefix (you can use other instead by config, e.g. `REACT_APP_`)
     - ✅ define as `process.env.${PREFIX}_XXX` for client-side
 - ✅ Entry Files (we can do nothing)
 - ⬜️ Config File (vue.config.js Options auto-resolved)
-    - ✅ vite#base - resolved from vue.config.js#`publicPath || baseUrl`
+    - ✅ vite#base - resolved from `process.env.PUBLIC_URL || vue.config.js#publicPath || baseUrl`
     - ✅ vite#css - resolved from vue.config.js#`css`
         - ✅ preprocessorOptions: `css.loaderOptions`
     - ✅ vite#server- resolved from vue.config.js#`devServer`
@@ -116,17 +123,21 @@ the plugin\'s generator will write some `main.html` for corresponding main.{js,t
         - ✅ https - resolved from `devServer.https`
         - ✅ open - resolved from `process.platform === 'darwin' || devServer.open`
         - ✅ proxy - resolved from `devServer.proxy`
-        - ❌ before - maybe we cannot
+        - ❌ before
+            - maybe we cannot, webpackDevServer before is a express app instance while viteDevServer is a connect instance which is not have a router function ( e.g. we can use something like app.post('/login', xxx) )
+            - or transform the connect app instance to express instance compatible ?
     - ✅ vite#build
         - ✅ outDir - resolved from vue.config.js#`outputDir`
         - ✅ cssCodeSplit - resolved from `css.extract`
         - ✅ sourcemap - resolved from `process.env.GENERATE_SOURCEMAP === 'true' || productionSourceMap || css.sourceMap`
-    - ⬜️ Alias - resolved from configureWebpack or chainWebpack(WIP)
+    - ⬜️ Alias - resolved from configureWebpack or chainWebpack (WIP)
 - ✅ MPA Support
     - ✅ same development experience and build result
 - ⬜️ Special Synatax
-    - ✅ '~module' syntax for Import CSS (will not support, we have workaround)
-    - ✅ require.context compatible
+    - ❌ require('xxx') or require('xxx').default, most of the case, it can be replaced by dynamicImport ( import('xxx') or import('xxx').then(module => module.default) )
+    - ❌ '~some-module' syntax for Import CSS (will not support, we have workaround)
+    - ✅ require.context compatibility
+    - ⬜️ module.hot compatibility (WIP)
 
 ## Examples
 - [simple vue-cli SPA project](https://github.com/IndexXuan/vue-cli-plugin-vite/tree/main/examples/my-mpa-ts-app)
@@ -139,7 +150,10 @@ you can clone/fork this repo, under examples/*
 
 ### Vite Build Support
 - Currently only support vite dev for development, you should still use yarn build(vue-cli-service build)
-- But you can use `BUILD=true MODERN=true yarn dev` to invoke vite build(no legacy and use esbuild minify, not recommended, please use yarn build instead)
+- But you can use `BUILD=true MODERN=true yarn vite` to invoke vite build(no legacy and use esbuild minify, not recommended, please use yarn build instead)
+
+### some module response 404 not found
+- if not compiler errors, maybe you import vue file without '.vue' ext, added it and it is required for vite and recommended for vue-cli (and required in vue-cli@5.x)
 
 ### Custom Style missing fonts
 - e.g. element-plus: https://element-plus.gitee.io/#/en-US/component/custom-theme
@@ -156,12 +170,26 @@ $--font-path: '~element-plus/lib/theme-chalk/fonts'; // changed to 'path/to/node
 
 ### jsx support
 - see options above, vitePluginVue2Options: { jsx: true }
-
-### require.context is not defined
-- you must open support in vue.config.js#vite#supportRequireContext
+- you may also see that `React is not defined`, it is you use jsx without set vitePluginVue2Options: { jsx: true }
 
 ### Vue3 support
 - currently only support Vue2.x, since Vue3.x you can use vite directly
+
+
+## Benefits
+
+### Best development-experience right now
+- Instant server start and lightning fast HMR
+
+### Migration to vite smoothly
+- In the future, migration to vite is only the replacement of special syntax between webpack and vite
+
+### Lint the codebase
+- lint dependencies, which is correctly use [main/module/exports](https://twitter.com/patak_js/status/1363514285180268550?s=21) field in package.json
+- lint codebase, which is more esmodule compatible
+    - use [import('xxx')](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import#dynamic_imports) not `require('xxx')`
+    - use [import.meta.xxx](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import.meta) not `module.xxx`
+
 
 ## Relevant Vite Plugins
 - [vite-plugin-vue2@underfin](https://github.com/underfin/vite-plugin-vue2)

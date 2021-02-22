@@ -4,6 +4,7 @@ import { createVuePlugin } from 'vite-plugin-vue2'
 import envCompatible from 'vite-plugin-env-compatible'
 import vueCli, { VueCliOptions } from 'vite-plugin-vue-cli'
 import mpa from 'vite-plugin-mpa'
+import { Options } from './options'
 
 // vue.config.js
 let vueConfig: VueCliOptions = {}
@@ -31,13 +32,12 @@ try {
 //    vite: {
 //      alias: Record<string, string>,
 //      plugins: Plugin[],
-//      supportRequireContext: true,
 //      vitePluginVue2Options: { jsx: true }
 //  },
 //},
 
 const pluginOptions = vueConfig.pluginOptions || {}
-const viteOptions = pluginOptions.vite || {}
+const viteOptions: Options = pluginOptions.vite || {}
 const alias = (pluginOptions.vite && pluginOptions.vite.alias) || ({} as Record<string, string>)
 const extraPlugins = (pluginOptions.vite && pluginOptions.vite.plugins) || ([] as Plugin[])
 
@@ -47,7 +47,12 @@ const plugins = [
   envCompatible(),
   vueCli(vueConfig),
   createVuePlugin(viteOptions.vitePluginVue2Options),
-  useMPA ? mpa() : undefined,
+  useMPA
+    ? mpa({
+        // special use main.html for vue-cli
+        filename: 'main.html',
+      })
+    : undefined,
   ...extraPlugins,
 ].filter(Boolean)
 
@@ -56,7 +61,7 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': path.resolve(process.cwd(), 'src'),
-      // high-priority with use provided alias
+      // high-priority for user-provided alias
       ...alias,
     },
   },

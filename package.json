@@ -1,12 +1,13 @@
 {
   "name": "vue-cli-plugin-vite",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "out-of-box vite dev for vue-cli project",
   "main": "index.js",
   "author": "indexxuan@gmail.com",
   "license": "MIT",
   "homepage": "https://github.com/IndexXuan/vue-cli-plugin-vite",
   "scripts": {
+    "commit": "git cz",
     "build": "echo build success"
   },
   "repository": {
@@ -25,7 +26,7 @@
     "vite-plugin-vue2": "1.2.1",
     "vite-plugin-env-compatible": "0.0.3",
     "vite-plugin-vue-cli": "0.1.0",
-    "vite-plugin-mpa": "0.0.3"
+    "vite-plugin-mpa": "0.1.0"
   },
   "devDependencies": {
     "@commitlint/cli": "7.2.0",
