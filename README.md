@@ -55,7 +55,7 @@ the plugin\'s generator will write some `main.html` for corresponding main.{js,t
   pluginsOptions: {
     vite: {
       /**
-       * will deprecated when we can auto resolve alias from vue.config.js (WIP)
+       * will deprecated when we can auto resolve alias from vue.config.js
        * @ is setted by the plugin, you can set others used in your projects, like @components
        * Record<string, string>
        * @default {}
