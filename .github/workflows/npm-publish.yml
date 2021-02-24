@@ -1,6 +1,9 @@
 name: NPM Publish
 
-on: push
+on:
+  push:
+    tags:
+      - v*
 
 jobs:
   publish:

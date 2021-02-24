@@ -126,7 +126,7 @@ the plugin\'s generator will write some `main.html` for corresponding main.{js,t
 ## Milestones
 - ✅ Plugin
     - ✅ we can do nothing but rewrite corresponding vite-plugin, most code and tools can be reused 
-- ✅ Environment Variables Compatible
+- ✅ Environment Variables Compatibility
     - ✅ load to process.env.XXX (all env with or without prefix will be loaded)
     - ✅ recognize `VUE_APP_` prefix (you can use other instead by config, e.g. `REACT_APP_`)
     - ✅ define as `process.env.${PREFIX}_XXX` for client-side
@@ -143,7 +143,7 @@ the plugin\'s generator will write some `main.html` for corresponding main.{js,t
         - ✅ proxy - resolved from `devServer.proxy`
         - ❌ before
             - maybe we cannot, webpackDevServer before is a express app instance while viteDevServer is a connect instance which is not have a router function ( e.g. we can use something like app.post('/login', xxx) )
-            - or transform the connect app instance to express instance compatible ?
+            - or transform the connect app instance to express instance ?
     - ✅ vite#build
         - ✅ outDir - resolved from vue.config.js#`outputDir`
         - ✅ cssCodeSplit - resolved from `css.extract`
