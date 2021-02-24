@@ -1,5 +1,5 @@
 import path from 'path'
-import { defineConfig, Plugin } from 'vite'
+import { defineConfig } from 'vite'
 import { createVuePlugin } from 'vite-plugin-vue2'
 import envCompatible from 'vite-plugin-env-compatible'
 import vueCli, { VueCliOptions } from 'vite-plugin-vue-cli'
@@ -26,7 +26,10 @@ try {
 //  configureWebpack: Object | Function
 //  chainWebpack: Function
 //  devServer: {
+//    port: Number
+//    host: String
 //    proxy: Object,
+//    before: Function
 //  },
 //  pluginOptions: {
 //    vite: {
