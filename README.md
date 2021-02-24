@@ -6,6 +6,24 @@
   <img src="./logo.png" alt="logo" title="logo" width="300px" />
 </p>
 
+<p align="center">
+  <a href="https://www.npmjs.com/package/vue-cli-plugin-vite" rel="nofollow">
+    <img alt="npm version" src="https://img.shields.io/npm/v/vue-cli-plugin-vite.svg?style=flat" style="max-width:100%;">
+  </a>
+  <a href="https://github.com/IndexXuan/vue-cli-plugin-vite#readme">
+    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" style="max-width:100%;">
+  </a>
+  <a href="https://github.com/IndexXuan/vue-cli-plugin-vite/graphs/commit-activity">
+    <img alt="Maintenance" src="https://img.shields.io/badge/Maintained-yes-green.svg" style="max-width:100%;">
+  </a>
+  <a href="https://github.com/IndexXuan/vue-cli-plugin-vite/blob/main/LICENSE">
+    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" style="max-width:100%;">
+  </a>
+  <a href="https://twitter.com/indexxuan" rel="nofollow">
+    <img alt="Twitter: IndexXuan" src="https://img.shields.io/twitter/follow/indexxuan.svg?style=social" style="max-width:100%;">
+  </a>
+</p>
+
 
 ## ToC
 - [Usage](#usage)
@@ -185,7 +203,7 @@ $--font-path: '~element-plus/lib/theme-chalk/fonts'; // changed to 'path/to/node
 - In the future, migration to vite is only the replacement of special syntax between webpack and vite
 
 ### Lint the codebase
-- lint dependencies, which is correctly use [main/module/exports](https://twitter.com/patak_js/status/1363514285180268550?s=21) field in package.json
+- lint dependencies, which is incorrectly use [main/module/exports](https://twitter.com/patak_js/status/1363514285180268550?s=21) field in package.json
 - lint codebase, which is more esmodule compatible
     - use [import('xxx')](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import#dynamic_imports) not `require('xxx')`
     - use [import.meta.xxx](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import.meta) not `module.xxx`
