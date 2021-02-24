@@ -155,7 +155,7 @@ the plugin\'s generator will write some `main.html` for corresponding main.{js,t
     - ❌ require('xxx') or require('xxx').default, most of the case, it can be replaced by dynamicImport ( import('xxx') or import('xxx').then(module => module.default) )
     - ❌ '~some-module' syntax for Import CSS (will not support, we have workaround)
     - ✅ require.context compatibility
-    - ⬜️ module.hot compatibility (WIP)
+    - ✅ module.hot compatibility
 
 ## Examples
 - [simple vue-cli SPA project](https://github.com/IndexXuan/vue-cli-plugin-vite/tree/main/examples/my-mpa-ts-app)
