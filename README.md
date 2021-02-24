@@ -7,6 +7,9 @@
 </p>
 
 <p align="center">
+  <a href="https://github.com/IndexXuan/vue-cli-plugin-vite/actions/workflows/npm-publish.yml">
+    <img alt="NPM Publish" src="https://github.com/IndexXuan/vue-cli-plugin-vite/actions/workflows/npm-publish.yml/badge.svg?branch=main" style="max-width:100%;">
+  </a>
   <a href="https://www.npmjs.com/package/vue-cli-plugin-vite" rel="nofollow">
     <img alt="npm version" src="https://img.shields.io/npm/v/vue-cli-plugin-vite.svg?style=flat" style="max-width:100%;">
   </a>
@@ -19,9 +22,9 @@
   <a href="https://github.com/IndexXuan/vue-cli-plugin-vite/blob/main/LICENSE">
     <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" style="max-width:100%;">
   </a>
-  <a href="https://twitter.com/indexxuan" rel="nofollow">
-    <img alt="Twitter: IndexXuan" src="https://img.shields.io/twitter/follow/indexxuan.svg?style=social" style="max-width:100%;">
-  </a>
+  <!-- <a href="https://twitter.com/indexxuan" rel="nofollow"> -->
+  <!--   <img alt="Twitter: IndexXuan" src="https://img.shields.io/twitter/follow/indexxuan.svg?style=social" style="max-width:100%;"> -->
+  <!-- </a> -->
 </p>
 
 
@@ -141,14 +144,14 @@ the plugin\'s generator will write some `main.html` for corresponding main.{js,t
         - ✅ https - resolved from `devServer.https`
         - ✅ open - resolved from `process.platform === 'darwin' || devServer.open`
         - ✅ proxy - resolved from `devServer.proxy`
-        - ❌ before
+        - ⬜️ before(WIP)
             - maybe we cannot, webpackDevServer before is a express app instance while viteDevServer is a connect instance which is not have a router function ( e.g. we can use something like app.post('/login', xxx) )
             - or transform the connect app instance to express instance ?
     - ✅ vite#build
         - ✅ outDir - resolved from vue.config.js#`outputDir`
         - ✅ cssCodeSplit - resolved from `css.extract`
         - ✅ sourcemap - resolved from `process.env.GENERATE_SOURCEMAP === 'true' || productionSourceMap || css.sourceMap`
-    - ⬜️ Alias - resolved from configureWebpack or chainWebpack (WIP)
+    - ✅ Alias - resolved from configureWebpack or chainWebpack
 - ✅ MPA Support
     - ✅ same development experience and build result
 - ⬜️ Special Synatax
@@ -160,7 +163,7 @@ the plugin\'s generator will write some `main.html` for corresponding main.{js,t
 ## Examples
 - [simple vue-cli SPA project](https://github.com/IndexXuan/vue-cli-plugin-vite/tree/main/examples/my-mpa-ts-app)
 - [simple vue-cli MPA TypeScript project](https://github.com/IndexXuan/vue-cli-plugin-vite/tree/main/examples/my-mpa-ts-app)
-- [(WIP)complex chrisvfritz/vue-enterprise-boilerplate project](https://github.com/IndexXuan/vue-enterprise-boilerplate/commit/e472942b235563b5a1291a21180c262ffeb2449c)
+- [(WIP)complex chrisvfritz/vue-enterprise-boilerplate project](https://github.com/IndexXuan/vue-enterprise-boilerplate/commits/feature/vite)
 
 you can clone/fork this repo, under examples/*
 
