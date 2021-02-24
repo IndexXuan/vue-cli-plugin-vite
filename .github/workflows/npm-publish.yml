@@ -1,21 +1,16 @@
-name: Node.js Package
+name: NPM Publish
 
-on:
-  release:
-    types: [created]
+on: push
 
 jobs:
-  publish-npm:
-    needs: build
+  publish:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v1
       - uses: actions/setup-node@v1
         with:
           node-version: 12
-          registry-url: https://registry.npmjs.org/
-      - run: yarn
-      - run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
-          
+      - run: yarn install
+      - uses: JS-DevTools/npm-publish@v1
+        with:
+          token: ${{ secrets.NPM_TOKEN }}
