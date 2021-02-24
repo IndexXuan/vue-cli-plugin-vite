@@ -38,8 +38,8 @@ try {
 
 const pluginOptions = vueConfig.pluginOptions || {}
 const viteOptions: Options = pluginOptions.vite || {}
-const alias = (pluginOptions.vite && pluginOptions.vite.alias) || ({} as Record<string, string>)
-const extraPlugins = (pluginOptions.vite && pluginOptions.vite.plugins) || ([] as Plugin[])
+const alias = viteOptions.alias || {}
+const extraPlugins = viteOptions.plugins || []
 
 const useMPA = Boolean(vueConfig.pages)
 
