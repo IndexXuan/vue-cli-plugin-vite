@@ -160,7 +160,7 @@ the plugin\'s generator will write some `main.html` for corresponding main.{js,t
 ## Examples
 - [simple vue-cli SPA project](https://github.com/IndexXuan/vue-cli-plugin-vite/tree/main/examples/my-mpa-ts-app)
 - [simple vue-cli MPA TypeScript project](https://github.com/IndexXuan/vue-cli-plugin-vite/tree/main/examples/my-mpa-ts-app)
-- [(WIP)complex chrisvfritz/vue-enterprise-boilerplate project](https://github.com/chrisvfritz/vue-enterprise-boilerplate)
+- [(WIP)complex chrisvfritz/vue-enterprise-boilerplate project](https://github.com/IndexXuan/vue-enterprise-boilerplate/commit/e472942b235563b5a1291a21180c262ffeb2449c)
 
 you can clone/fork this repo, under examples/*
 
