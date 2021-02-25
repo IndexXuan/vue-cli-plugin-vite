@@ -31,7 +31,9 @@ if (viteOptions.alias) {
 }
 
 const chainableConfig = new Config()
-vueConfig.chainWebpack(chainableConfig)
+if (vueConfig.chainWebpack) {
+  vueConfig.chainWebpack(chainableConfig)
+}
 // @see {@link https://github.com/vuejs/vue-cli/blob/4ce7edd3754c3856c760d126f7fa3928f120aa2e/packages/%40vue/cli-service/lib/Service.js#L248}
 const aliasOfChainWebpack = chainableConfig.resolve.alias.entries()
 // @see {@link temp/webpack*.js & temp/vue.config.js}
