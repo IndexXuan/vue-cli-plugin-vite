@@ -6,7 +6,8 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "vite": "node ./bin/vite"
+    "vite": "node ./bin/vite",
+    "vite:build": "BUILD=true MODERN=true yarn vite"
   },
   "dependencies": {
     "core-js": "^3.6.5",

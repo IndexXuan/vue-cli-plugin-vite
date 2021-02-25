@@ -77,7 +77,7 @@ the plugin\'s generator will write some `main.html` for corresponding main.{js,t
   pluginsOptions: {
     vite: {
       /**
-       * deprecated since v0.2.0. we can auto resolve alias from vue.config.js
+       * deprecated since v0.2.2. we can auto-resolve alias from vue.config.js
        * @ is setted by the plugin, you can set others used in your projects, like @components
        * Record<string, string>
        * @default {}
@@ -137,7 +137,6 @@ the plugin\'s generator will write some `main.html` for corresponding main.{js,t
 - ✅ Entry Files (we can do nothing)
 - ⬜️ Config File (vue.config.js Options auto-resolved)
     - ✅ vite#base - resolved from `process.env.PUBLIC_URL || vue.config.js#publicPath || baseUrl`
-    - ✅ runtimeCompiler - resolved from `vue.config.js#runtimeCompiler`
     - ✅ vite#css - resolved from vue.config.js#`css`
         - ✅ preprocessorOptions: `css.loaderOptions`
     - ✅ vite#server- resolved from vue.config.js#`devServer`
@@ -154,9 +153,10 @@ the plugin\'s generator will write some `main.html` for corresponding main.{js,t
         - ✅ cssCodeSplit - resolved from `css.extract`
         - ✅ sourcemap - resolved from `process.env.GENERATE_SOURCEMAP === 'true' || productionSourceMap || css.sourceMap`
     - ✅ Alias - resolved from configureWebpack or chainWebpack
+        - ✅ also resolved from `vue.config.js#runtimeCompiler`
 - ✅ MPA Support
     - ✅ same development experience and build result
-- ⬜️ Special Synatax
+- ✅ Special Synatax
     - ❌ require('xxx') or require('xxx').default, most of the case, it can be replaced by dynamicImport ( import('xxx') or import('xxx').then(module => module.default) )
     - ❌ '~some-module' syntax for Import CSS (will not support, we have workaround)
     - ✅ require.context compatibility

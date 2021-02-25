@@ -8,7 +8,10 @@
   "homepage": "https://github.com/IndexXuan/vue-cli-plugin-vite",
   "scripts": {
     "commit": "git cz",
-    "build": "echo build success"
+    "build": "echo build success",
+    "test:spa-js": "cd ./examples/my-spa-js-app && npm i && yarn vite:build",
+    "test:mpa-ts": "cd ./examples/my-mpa-ts-app && npm i && yarn vite:build",
+    "test": "npm run test:spa-js & npm run test:mpa-ts"
   },
   "repository": {
     "type": "git",
