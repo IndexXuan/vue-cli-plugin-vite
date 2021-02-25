@@ -47,6 +47,7 @@
     - [Best development-experience right now](#best-development-experience-right-now)
     - [Migration to vite smoothly](#migration-to-vite-smoothly)
     - [Lint the codebase](#lint-the-codebase)
+    - [Use vue-cli ecosystem](#use-vue-cli-ecosystem)
 - [Relevant Vite Plugins](#relevant-vite-plugins)
     - [vite-plugin-vue2@underfin](https://github.com/underfin/vite-plugin-vue2)
     - [vite-plugin-env-compatible](https://github.com/IndexXuan/vite-plugin-env-compatible)
@@ -175,7 +176,7 @@ you can clone/fork this repo, under examples/*
 - But you can use `BUILD=true MODERN=true yarn vite` to invoke vite build(no legacy and use esbuild minify, not recommended, please use yarn build instead)
 
 ### some module response 404 not found
-- if not compiler errors, maybe you import vue file without '.vue' ext, added it and it is required for vite and recommended for vue-cli (and required in vue-cli@5.x)
+- if not compiler errors, maybe you import vue file without '.vue' ext, added it and it is required for vite and recommended for vue-cli (and required in vue-cli 5.x)
 
 ### Custom Style missing fonts
 - e.g. element-plus: https://element-plus.gitee.io/#/en-US/component/custom-theme
@@ -211,6 +212,12 @@ $--font-path: '~element-plus/lib/theme-chalk/fonts'; // changed to 'path/to/node
 - lint codebase, which is more esmodule compatible
     - use [import('xxx')](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import#dynamic_imports) not `require('xxx')`
     - use [import.meta.xxx](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import.meta) not `module.xxx`
+
+### Use vue-cli ecosystem
+- first-class unit-test integration (by @vue/cli-plugin-unit-jest...)
+- first-class e2e integration (by @vue/cli-plugin-cypress...)
+- first-class eslint/stylelint integration
+- first-class xyz support by the community plugins
 
 
 ## Relevant Vite Plugins
