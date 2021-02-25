@@ -1,36 +1,40 @@
 import path from 'path'
 import { defineConfig } from 'vite'
+import Config from 'webpack-chain'
+import merge from 'webpack-merge'
 import { createVuePlugin } from 'vite-plugin-vue2'
 import envCompatible from 'vite-plugin-env-compatible'
 import vueCli, { VueCliOptions } from 'vite-plugin-vue-cli'
 import mpa from 'vite-plugin-mpa'
 import { Options } from './options'
-import Config from 'webpack-chain'
-import merge from 'webpack-merge'
 import { name } from '../package.json'
+
+const resolve = (p: string) => path.resolve(process.cwd(), p)
 
 // vue.config.js
 let vueConfig: VueCliOptions = {}
 try {
-  vueConfig = require(path.resolve(process.cwd(), 'vue.config.js')) || {}
+  vueConfig = require(resolve('vue.config.js')) || {}
 } catch (e) {
   /**/
 }
 
 const pluginOptions = vueConfig.pluginOptions || {}
+const runtimeCompiler = vueConfig.runtimeCompiler
 const viteOptions: Options = pluginOptions.vite || {}
 const extraPlugins = viteOptions.plugins || []
 
 if (viteOptions.alias) {
   console.log(
-    `[${name}]: pluginOptions.vite.alias is deprecated, will auto resolved from chainWebpack / configureWebpack`,
+    `[${name}]: pluginOptions.vite.alias is deprecated, will auto-resolve from chainWebpack / configureWebpack`,
   )
 }
 
 const chainableConfig = new Config()
 vueConfig.chainWebpack(chainableConfig)
-// @see temp/webpack*.js & temp/vue.config.js
+// @see {@link https://github.com/vuejs/vue-cli/blob/4ce7edd3754c3856c760d126f7fa3928f120aa2e/packages/%40vue/cli-service/lib/Service.js#L248}
 const aliasOfChainWebpack = chainableConfig.resolve.alias.entries()
+// @see {@link temp/webpack*.js & temp/vue.config.js}
 const aliasOfConfigureWebpackObjectMode =
   (vueConfig.configureWebpack &&
     vueConfig.configureWebpack.resolve &&
@@ -48,6 +52,10 @@ const aliasOfConfigureWebpackFunctionMode = (() => {
   }
 })()
 const alias = {
+  // @see {@link https://github.com/vuejs/vue-cli/blob/0dccc4af380da5dc269abbbaac7387c0348c2197/packages/%40vue/cli-service/lib/config/base.js#L70}
+  vue: runtimeCompiler ? 'vue/dist/vue.esm.js' : 'vue/dist/vue.runtime.esm.js',
+  '@': resolve('src'),
+  // high-priority for user-provided alias
   ...aliasOfConfigureWebpackObjectMode,
   ...aliasOfConfigureWebpackFunctionMode,
   ...aliasOfChainWebpack,
@@ -71,11 +79,7 @@ const plugins = [
 // @see https://vitejs.dev/config/
 export default defineConfig({
   resolve: {
-    alias: {
-      '@': path.resolve(process.cwd(), 'src'),
-      // high-priority for user-provided alias
-      ...alias,
-    },
+    alias,
   },
   plugins,
 })

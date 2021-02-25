@@ -76,7 +76,7 @@ the plugin\'s generator will write some `main.html` for corresponding main.{js,t
   pluginsOptions: {
     vite: {
       /**
-       * will deprecated when we can auto resolve alias from vue.config.js
+       * deprecated since v0.2.0. we can auto resolve alias from vue.config.js
        * @ is setted by the plugin, you can set others used in your projects, like @components
        * Record<string, string>
        * @default {}
@@ -123,7 +123,7 @@ the plugin\'s generator will write some `main.html` for corresponding main.{js,t
 |     Entry Files                  | 1. main.{js,ts}.    | 1. *.html          |
 |     Config File                  | 1. vue.config.js    | 1. vite.config.ts. <br />2. support use --config to locate |
 |     MPA Support                  | 1. native support by `options.pages`. <br />2. with history rewrite support | 1. native support by `rollupOptions.input` |
-|     Special Syntax               | 1. require(by webpack) <br /> 2. require.context(by webpack) <br />2. use `~some-module/dist/index.css`(by `css-loader`) <br />3. module.hot for HMR | 1. import.meta.glob/globEager <br />2. native support by vite, use 'module/dist/index.css' directly <br />3. import.meta.hot for HMR  |
+|     Special Syntax               | 1. require(by webpack) <br /> 2. require.context(by webpack) <br />2. use `~some-module/dist/index.css`(by `css-loader`) <br />3. module.hot for HMR | 1. import.meta.glob/globEager <br />2. native support by vite, use `module/dist/index.css` directly <br />3. import.meta.hot for HMR  |
 
 
 ## Milestones
@@ -136,6 +136,7 @@ the plugin\'s generator will write some `main.html` for corresponding main.{js,t
 - ✅ Entry Files (we can do nothing)
 - ⬜️ Config File (vue.config.js Options auto-resolved)
     - ✅ vite#base - resolved from `process.env.PUBLIC_URL || vue.config.js#publicPath || baseUrl`
+    - ✅ runtimeCompiler - resolved from `vue.config.js#runtimeCompiler`
     - ✅ vite#css - resolved from vue.config.js#`css`
         - ✅ preprocessorOptions: `css.loaderOptions`
     - ✅ vite#server- resolved from vue.config.js#`devServer`
