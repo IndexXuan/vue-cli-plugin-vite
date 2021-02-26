@@ -7,6 +7,9 @@
 </p>
 
 <p align="center">
+  <a href="https://github.com/IndexXuan/vue-cli-plugin-vite/actions/workflows/ci.yml">
+    <img alt="CI" src="https://github.com/IndexXuan/vue-cli-plugin-vite/actions/workflows/ci.yml/badge.svg" style="max-width:100%;">
+  </a>
   <a href="https://github.com/IndexXuan/vue-cli-plugin-vite/actions/workflows/npm-publish.yml">
     <img alt="NPM Publish" src="https://github.com/IndexXuan/vue-cli-plugin-vite/actions/workflows/npm-publish.yml/badge.svg?branch=main" style="max-width:100%;">
   </a>
@@ -214,10 +217,10 @@ $--font-path: '~element-plus/lib/theme-chalk/fonts'; // changed to 'path/to/node
     - use [import.meta.xxx](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import.meta) not `module.xxx`
 
 ### Use vue-cli ecosystem
-- first-class unit-test integration (by @vue/cli-plugin-unit-jest...)
-- first-class e2e integration (by @vue/cli-plugin-cypress...)
+- first-class unit-test integration (by [@vue/cli-plugin-unit-jest](https://cli.vuejs.org/core-plugins/unit-jest.html)...)
+- first-class e2e integration (by [@vue/cli-plugin-cypress](https://cli.vuejs.org/core-plugins/e2e-cypress.html)...)
 - first-class eslint/stylelint integration
-- first-class xyz support by the community plugins
+- first-class xyz support by the [official](https://cli.vuejs.org/core-plugins/) and [community](https://www.npmjs.com/search?q=vue-cli-plugin-) plugins.
 
 
 ## Relevant Vite Plugins
