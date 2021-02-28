@@ -84,4 +84,5 @@ export default defineConfig({
     alias,
   },
   plugins,
+  optimizeDeps: viteOptions.optimizeDeps,
 })
