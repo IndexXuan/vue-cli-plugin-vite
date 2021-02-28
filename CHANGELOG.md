@@ -1,3 +1,13 @@
+<a name="0.2.3"></a>
+## [0.2.3](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v0.2.2...v0.2.3) (2021-02-28)
+
+
+### Features
+
+* support vite#optimizeDeps options ([7b0d55d](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/7b0d55d))
+
+
+
 <a name="0.2.2"></a>
 ## [0.2.2](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v0.2.1...v0.2.2) (2021-02-25)
 
