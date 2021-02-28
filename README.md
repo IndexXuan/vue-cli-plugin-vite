@@ -77,7 +77,7 @@ the plugin\'s generator will write some `main.html` for corresponding main.{js,t
 // vue.config.js
 {
   // ...
-  pluginsOptions: {
+  pluginOptions: {
     vite: {
       /**
        * deprecated since v0.2.2. we can auto-resolve alias from vue.config.js
