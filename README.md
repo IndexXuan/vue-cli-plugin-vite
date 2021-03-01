@@ -10,8 +10,11 @@
   <a href="https://github.com/IndexXuan/vue-cli-plugin-vite/actions/workflows/ci.yml">
     <img alt="CI" src="https://github.com/IndexXuan/vue-cli-plugin-vite/actions/workflows/ci.yml/badge.svg" style="max-width:100%;">
   </a>
-  <a href="https://github.com/IndexXuan/vue-cli-plugin-vite/actions/workflows/npm-publish.yml">
-    <img alt="NPM Publish" src="https://github.com/IndexXuan/vue-cli-plugin-vite/actions/workflows/npm-publish.yml/badge.svg?branch=main" style="max-width:100%;">
+  <!-- <a href="https://github.com/IndexXuan/vue-cli-plugin-vite/actions/workflows/npm-publish.yml"> -->
+  <!--   <img alt="NPM Publish" src="https://github.com/IndexXuan/vue-cli-plugin-vite/actions/workflows/npm-publish.yml/badge.svg?branch=main" style="max-width:100%;"> -->
+  <!-- </a> -->
+  <a href="https://www.npmjs.com/package/vue-cli-plugin-vite" rel="nofollow">
+    <img alt="downloads" src="https://img.shields.io/npm/dt/vue-cli-plugin-vite.svg?style=flat-square">
   </a>
   <a href="https://www.npmjs.com/package/vue-cli-plugin-vite" rel="nofollow">
     <img alt="npm version" src="https://img.shields.io/npm/v/vue-cli-plugin-vite.svg?style=flat" style="max-width:100%;">
