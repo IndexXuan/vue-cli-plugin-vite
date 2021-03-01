@@ -148,9 +148,8 @@ the plugin\'s generator will write some `main.html` for corresponding main.{js,t
         - ✅ https - resolved from `devServer.https`
         - ✅ open - resolved from `process.platform === 'darwin' || devServer.open`
         - ✅ proxy - resolved from `devServer.proxy`
-        - ⬜️ before(WIP)
-            - maybe we cannot, webpackDevServer before is a express app instance while viteDevServer is a connect instance which is not have a router function ( e.g. we can use something like app.post('/login', xxx) )
-            - or transform the connect app instance to express instance ?
+        - ✅ before
+            - use middlewares to improve viteDevServer(connect instance) to express instance
     - ✅ vite#build
         - ✅ outDir - resolved from vue.config.js#`outputDir`
         - ✅ cssCodeSplit - resolved from `css.extract`
@@ -168,7 +167,7 @@ the plugin\'s generator will write some `main.html` for corresponding main.{js,t
 ## Examples
 - [simple vue-cli SPA project](https://github.com/IndexXuan/vue-cli-plugin-vite/tree/main/examples/my-mpa-ts-app)
 - [simple vue-cli MPA TypeScript project](https://github.com/IndexXuan/vue-cli-plugin-vite/tree/main/examples/my-mpa-ts-app)
-- [(WIP)complex chrisvfritz/vue-enterprise-boilerplate project](https://github.com/IndexXuan/vue-enterprise-boilerplate/commits/feature/vite)
+- [complex chrisvfritz/vue-enterprise-boilerplate project](https://github.com/IndexXuan/vue-enterprise-boilerplate/compare/master...IndexXuan:feature/vite)
 
 you can clone/fork this repo, under examples/*
 
