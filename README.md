@@ -189,9 +189,9 @@ you can clone/fork this repo, under examples/*
 $--color-primary: teal;
 
 /* icon font path, required */
-$--font-path: '~element-plus/lib/theme-chalk/fonts'; // changed to 'path/to/node_modules/element-plus/lib/theme-chalk/fonts;'
+$--font-path: '~element-plus/lib/theme-chalk/fonts'; // changed to 'path/to/node_modules/element-plus/lib/theme-chalk/fonts;' (TOOD: can vite support it ?)
 
-@import "~element-plus/packages/theme-chalk/src/index"; // remove '~', css-loader support it
+@import "~element-plus/packages/theme-chalk/src/index"; // remove '~', both css-loader and vite support it
 ```
 
 ### jsx support

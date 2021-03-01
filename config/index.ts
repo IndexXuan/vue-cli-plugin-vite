@@ -57,6 +57,7 @@ const alias = {
   // @see {@link https://github.com/vuejs/vue-cli/blob/0dccc4af380da5dc269abbbaac7387c0348c2197/packages/%40vue/cli-service/lib/config/base.js#L70}
   vue: runtimeCompiler ? 'vue/dist/vue.esm.js' : 'vue/dist/vue.runtime.esm.js',
   '@': resolve('src'),
+  '~': '',
   // high-priority for user-provided alias
   ...aliasOfConfigureWebpackObjectMode,
   ...aliasOfConfigureWebpackFunctionMode,
