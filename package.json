@@ -9,8 +9,8 @@
   "scripts": {
     "commit": "git cz",
     "build": "echo build success",
-    "test:spa-js": "cd ./examples/my-spa-js-app && npm i && yarn vite:build",
-    "test:mpa-ts": "cd ./examples/my-mpa-ts-app && npm i && yarn vite:build",
+    "test:spa-js": "cd ./examples/my-spa-js-app && npm i && yarn vite:build && yarn build",
+    "test:mpa-ts": "cd ./examples/my-mpa-ts-app && npm i && yarn vite:build && yarn build",
     "test": "npm run test:spa-js & npm run test:mpa-ts",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md"
   },
