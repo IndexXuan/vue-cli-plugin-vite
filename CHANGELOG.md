@@ -1,3 +1,13 @@
+<a name="0.3.0"></a>
+# [0.3.0](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v0.2.2...v0.3.0) (2021-03-01)
+
+
+### Features
+
+* support devServer.before (close [#6](https://github.com/IndexXuan/vue-cli-plugin-vite/issues/6)) ([da41d9a](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/da41d9a))
+
+
+
 <a name="0.2.3"></a>
 ## [0.2.3](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v0.2.2...v0.2.3) (2021-03-01)
 
