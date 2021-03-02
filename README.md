@@ -34,32 +34,32 @@
 </p>
 
 
-## ToC
+## Table of Contents
+
+<!-- toc -->
+
 - [Usage](#usage)
 - [Motivation](#motivation)
 - [Options](#options)
 - [Underlying principle](#underlying-principle)
-    - [Compatibility](#compatibility)
-    - [Differences between vue-cli and vite](#differences-between-vue-cli-and-vite)
+  - [Compatibility](#compatibility)
+  - [Differences between vue-cli and vite](#differences-between-vue-cli-and-vite)
 - [Milestones](#milestones)
 - [Examples](#examples)
 - [Troubleshooting](#troubleshooting)
-    - [Some module response 404 not found](#some-module-response-404-not-found)
-    - [Vite Build Support](#vite-build-support)
-    - [Custom Style missing fonts](#custom-style-missing-fonts)
-    - [JSX support](#jsx-support)
-    - [Vue3 support](#vue3-support)
+  - [Vite Build Support](#vite-build-support)
+  - [some module response 404 not found](#some-module-response-404-not-found)
+  - [Custom Style missing fonts](#custom-style-missing-fonts)
+  - [jsx support](#jsx-support)
+  - [Vue3 support](#vue3-support)
 - [Benefits](#benefits)
-    - [Best development-experience right now](#best-development-experience-right-now)
-    - [Migration to vite smoothly](#migration-to-vite-smoothly)
-    - [Lint the codebase](#lint-the-codebase)
-    - [Use vue-cli ecosystem](#use-vue-cli-ecosystem)
+  - [Best development-experience right now](#best-development-experience-right-now)
+  - [Migration to vite smoothly](#migration-to-vite-smoothly)
+  - [Lint the codebase](#lint-the-codebase)
+  - [Use vue-cli ecosystem](#use-vue-cli-ecosystem)
 - [Relevant Vite Plugins](#relevant-vite-plugins)
-    - [vite-plugin-vue2@underfin](https://github.com/underfin/vite-plugin-vue2)
-    - [vite-plugin-env-compatible](https://github.com/IndexXuan/vite-plugin-env-compatible)
-    - [vite-plugin-vue-cli](https://github.com/IndexXuan/vite-plugin-vue-cli)
-    - [vite-plugin-mpa](https://github.com/IndexXuan/vite-plugin-mpa)
 
+<!-- tocstop -->
 
 ## Usage
 ```sh

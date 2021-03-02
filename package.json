@@ -12,7 +12,8 @@
     "test:spa-js": "cd ./examples/my-spa-js-app && npm i && yarn vite:build && yarn build",
     "test:mpa-ts": "cd ./examples/my-mpa-ts-app && npm i && yarn vite:build && yarn build",
     "test": "npm run test:spa-js & npm run test:mpa-ts",
-    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md"
+    "toc": "npx markdown-toc -i --bullets=- README.md",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"
   },
   "repository": {
     "type": "git",
@@ -37,11 +38,12 @@
     "@commitlint/config-conventional": "7.1.2",
     "@types/node": "14.14.25",
     "@types/webpack-merge": "4.1.5",
+    "commitizen": "2.10.1",
     "conventional-changelog-cli": "2.1.1",
     "conventional-github-releaser": "3.1.5",
-    "commitizen": "2.10.1",
     "cz-customizable": "5.2.0",
     "lint-staged": "10.5.4",
+    "markdown-toc": "^1.2.0",
     "webpack-chain": "6.3.1",
     "webpack-merge": "4.2.2",
     "yorkie": "2.0.0"
@@ -67,7 +69,7 @@
     }
   },
   "gitHooks": {
-    "pre-commit": "yarn changelog && lint-staged",
+    "pre-commit": "yarn toc && yarn changelog && git add . && lint-staged",
     "commit-msg": "commitlint -e $GIT_PARAMS"
   },
   "lint-staged": {
