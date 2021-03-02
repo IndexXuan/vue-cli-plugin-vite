@@ -101,7 +101,12 @@ the plugin\'s generator will write some `main.html` for corresponding main.{js,t
        * @see https://github.com/underfin/vite-plugin-vue2#options
        * @default {}
        */
-      vitePluginVue2Options: {}
+      vitePluginVue2Options: {},
+      /**
+       * Vite 的 optimizeDeps 选项
+       * @default {}
+       */
+      optimizeDeps: {}
     }
   },
 }
