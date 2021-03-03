@@ -27,11 +27,11 @@
     "vite"
   ],
   "dependencies": {
-    "vite": "2.0.1",
-    "vite-plugin-env-compatible": "0.0.3",
-    "vite-plugin-mpa": "0.1.0",
-    "vite-plugin-vue-cli": "0.3.0",
-    "vite-plugin-vue2": "1.2.1"
+    "vite": "2.0.5",
+    "vite-plugin-env-compatible": "0.1.0",
+    "vite-plugin-mpa": "0.3.1",
+    "vite-plugin-vue-cli": "0.4.0",
+    "vite-plugin-vue2": "1.2.2"
   },
   "devDependencies": {
     "@commitlint/cli": "7.2.0",
