@@ -4,7 +4,6 @@
 
 ### Features
 
-* also invoke yarn build for yarn test ([0ab5d55](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/0ab5d55))
 * update mpa plugin & deps ([e34eb3d](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/e34eb3d))
 
 
@@ -26,46 +25,6 @@
 ### Features
 
 * support vite#optimizeDeps options (close [#11](https://github.com/IndexXuan/vue-cli-plugin-vite/issues/11)) ([9b959f3](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/9b959f3))
-
-
-
-<a name="0.2.3"></a>
-## [0.2.3](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v0.2.2...v0.2.3) (2021-02-28)
-
-
-### Features
-
-* support vite#optimizeDeps options (close [#11](https://github.com/IndexXuan/vue-cli-plugin-vite/issues/11)) ([9b959f3](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/9b959f3))
-
-
-
-<a name="0.2.3"></a>
-## [0.2.3](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v0.2.2...v0.2.3) (2021-02-28)
-
-
-### Features
-
-* support vite#optimizeDeps options ([7b0d55d](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/7b0d55d))
-
-
-
-<a name="0.2.3"></a>
-## [0.2.3](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v0.2.2...v0.2.3) (2021-02-28)
-
-
-### Features
-
-* support vite#optimizeDeps options ([7b0d55d](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/7b0d55d))
-
-
-
-<a name="0.2.3"></a>
-## [0.2.3](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v0.2.2...v0.2.3) (2021-02-28)
-
-
-### Features
-
-* support vite#optimizeDeps options ([7b0d55d](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/7b0d55d))
 
 
 
@@ -106,7 +65,7 @@
 
 ### Bug Fixes
 
-* **generator:** fix bin/vite for Windows ([#1](https://github.com/IndexXuan/vue-cli-plugin-vite/issues/1)) ([dec2739](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/dec2739))
+* **generator** fix bin/vite for Windows ([#1](https://github.com/IndexXuan/vue-cli-plugin-vite/issues/1)) ([dec2739](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/dec2739))
 
 
 
@@ -131,10 +90,12 @@
 
 ### Features
 
-* add .npmignore ([c52bafb](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/c52bafb))
-* add examples ([cf4d369](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/cf4d369))
 * add vite-plugin-vue-cli ([6b2cb09](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/6b2cb09))
 * support require.context ([35c37be](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/35c37be))
 
 
 
+<a name="0.1.0"></a>
+
+### Features
+* first release
