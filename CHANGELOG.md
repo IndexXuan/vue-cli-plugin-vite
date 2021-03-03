@@ -1,3 +1,14 @@
+<a name="0.3.1"></a>
+## [0.3.1](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v0.3.0...v0.3.1) (2021-03-03)
+
+
+### Features
+
+* also invoke yarn build for yarn test ([0ab5d55](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/0ab5d55))
+* update mpa plugin & deps ([e34eb3d](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/e34eb3d))
+
+
+
 <a name="0.3.0"></a>
 # [0.3.0](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v0.2.2...v0.3.0) (2021-03-01)
 
