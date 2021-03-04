@@ -72,7 +72,7 @@ the plugin\'s generator will write some `main.html` for corresponding main.{js,t
 - We have lots of exists vue-cli(3.x / 4.x) projects.
 - In Production: vue-cli based on webpack is still the best practice for bundling webapp(with code spliting, legecy-build for old browsers).
 - In Development: instant server start and lightning fast HMR by vite is interesting.
-- Why not we use them together ?
+- Why not use them together ?
 
 
 ## [Options](https://github.com/IndexXuan/vue-cli-plugin-vite/blob/main/config/options.ts)
@@ -82,15 +82,15 @@ the plugin\'s generator will write some `main.html` for corresponding main.{js,t
   // ...
   pluginOptions: {
     vite: {
-      /**
-       * deprecated since v0.2.2. we can auto-resolve alias from vue.config.js
-       * @ is setted by the plugin, you can set others used in your projects, like @components
-       * Record<string, string>
-       * @default {}
-       */
-      alias: {
-        '@components': path.resolve(__dirname, './src/components'),
-      },
+      ///**
+      // * deprecated since v0.2.2. we can auto-resolve alias from vue.config.js
+      // * @ is setted by the plugin, you can set others used in your projects, like @components
+      // * Record<string, string>
+      // * @default {}
+      // */
+      // alias: {
+      //   '@components': path.resolve(__dirname, './src/components'),
+      // },
       /**
        * Plugin[]
        * @default []
@@ -146,7 +146,7 @@ the plugin\'s generator will write some `main.html` for corresponding main.{js,t
     - ✅ recognize `VUE_APP_` prefix (you can use other instead by config, e.g. `REACT_APP_`)
     - ✅ define as `process.env.${PREFIX}_XXX` for client-side
 - ✅ Entry Files (we can do nothing)
-- ⬜️ Config File (vue.config.js Options auto-resolved)
+- ✅ Config File (vue.config.js Options auto-resolved)
     - ✅ vite#base - resolved from `process.env.PUBLIC_URL || vue.config.js#publicPath || baseUrl`
     - ✅ vite#css - resolved from vue.config.js#`css`
         - ✅ preprocessorOptions: `css.loaderOptions`
@@ -224,8 +224,8 @@ $--font-path: '~element-plus/lib/theme-chalk/fonts'; // changed to 'path/to/node
     - use [import.meta.xxx](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import.meta) not `module.xxx`
 
 ### Use vue-cli ecosystem
-- first-class unit-test integration (by [@vue/cli-plugin-unit-jest](https://cli.vuejs.org/core-plugins/unit-jest.html)...)
-- first-class e2e integration (by [@vue/cli-plugin-cypress](https://cli.vuejs.org/core-plugins/e2e-cypress.html)...)
+- first-class unit-test integration (by [@vue/cli-plugin-unit-jest](https://cli.vuejs.org/core-plugins/unit-jest.html))
+- first-class e2e integration (by [@vue/cli-plugin-cypress](https://cli.vuejs.org/core-plugins/e2e-cypress.html))
 - first-class eslint/stylelint integration
 - first-class xyz support by the [official](https://cli.vuejs.org/core-plugins/) and [community](https://www.npmjs.com/search?q=vue-cli-plugin-) plugins.
 
