@@ -48,6 +48,7 @@
 - [Examples](#examples)
 - [Troubleshooting](#troubleshooting)
   - [Vite Build Support](#vite-build-support)
+  - [How to completely migrate to vite in the future](#how-to-completely-migrate-to-vite-in-the-future)
   - [some module response 404 not found](#some-module-response-404-not-found)
   - [Custom Style missing fonts](#custom-style-missing-fonts)
   - [jsx support](#jsx-support)
@@ -190,8 +191,19 @@ you can clone/fork this repo, under examples/*
 - Currently only support vite dev for development, you should still use yarn build(vue-cli-service build)
 - But you can use `BUILD=true MODERN=true yarn vite` to invoke vite build(no legacy and use esbuild minify, not recommended, please use yarn build instead)
 
+### How to completely migrate to vite in the future
+- if this plugin help you fix error and use vite successfully, it is not too hard to migrate, compared to directly migrate from vue-cli or others
+- safely replace all `VUE_APP_` to `VITE_` code (e.g. .env.*)
+- safely replace all `process.env.VUE_APP_` to `import.meta.env.VITE_` in client-side code.
+- safely copy `./node_modules/vite-plugin-vue-cli/config/index.ts` to `$projectRoot/vite.config.ts` and install corresponding vite-plugin list by it
+- add npm scripts `dev: vite` & `build: vite build`, remove other vue-cli scripts, like `serve`
+- migrate all `require.context` to `import.meta.glob/globEager`
+- remove all `webpack plugins` and migrate all vue.config.js setted chainWebpack/configureWebpack to corresponding vite plugin or options
+- deps & devDeps cleanup
+- other cleanup and tests
+
 ### some module response 404 not found
-- if not compiler errors, maybe you import vue file without '.vue' ext, added it and it is required for vite and recommended for vue-cli (and required in vue-cli 5.x)
+- if not compiler errors, maybe you import vue file without `.vue` ext, added it and it is required for vite and recommended for vue-cli (and required in vue-cli 5.x)
 
 ### Custom Style missing fonts
 - e.g. element-plus: https://element-plus.gitee.io/#/en-US/component/custom-theme
