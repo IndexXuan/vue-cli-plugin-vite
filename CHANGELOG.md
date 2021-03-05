@@ -1,3 +1,13 @@
+<a name="0.3.2"></a>
+## [0.3.2](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v0.3.1...v0.3.2) (2021-03-05)
+
+
+### Bug Fixes
+
+* fix require.context nested components in Windows ([#13](https://github.com/IndexXuan/vue-cli-plugin-vite/issues/13)) ([6e78028](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/6e78028))
+
+
+
 <a name="0.3.1"></a>
 ## [0.3.1](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v0.3.0...v0.3.1) (2021-03-03)
 
