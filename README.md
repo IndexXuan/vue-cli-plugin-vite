@@ -63,7 +63,12 @@
 
 ## Usage
 ```sh
+# 1. first step
 vue add vite
+
+# 2. second step
+# NOTE you cannot directly use `vite` or `npx vite` since it is origin vite not this plugin.
+yarn vite // or npm run vite
 ```
 the plugin\'s generator will write some `main.html` for corresponding main.{js,ts}, since vite need html file for dev-server entry file
 
