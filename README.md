@@ -7,25 +7,29 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/IndexXuan/vue-cli-plugin-vite/actions/workflows/ci.yml">
-    <img alt="CI" src="https://github.com/IndexXuan/vue-cli-plugin-vite/actions/workflows/ci.yml/badge.svg" style="max-width:100%;">
-  </a>
   <!-- <a href="https://github.com/IndexXuan/vue-cli-plugin-vite/actions/workflows/npm-publish.yml"> -->
   <!--   <img alt="NPM Publish" src="https://github.com/IndexXuan/vue-cli-plugin-vite/actions/workflows/npm-publish.yml/badge.svg?branch=main" style="max-width:100%;"> -->
   <!-- </a> -->
-  <a href="https://www.npmjs.com/package/vue-cli-plugin-vite" rel="nofollow">
-    <img alt="downloads" src="https://img.shields.io/npm/dt/vue-cli-plugin-vite.svg?style=flat-square">
+  <a href="https://www.npmjs.com/package/vue-cli-plugin-vite" rel="nofollow" target="_blank">
+    <img alt="npm version" src="https://img.shields.io/npm/v/vue-cli-plugin-vite.svg" style="max-width:100%;">
   </a>
-  <a href="https://www.npmjs.com/package/vue-cli-plugin-vite" rel="nofollow">
-    <img alt="npm version" src="https://img.shields.io/npm/v/vue-cli-plugin-vite.svg?style=flat" style="max-width:100%;">
+  <a href="https://www.npmjs.com/package/vue-cli-plugin-vite" rel="nofollow" target="_blank">
+    <img alt="downloads" src="https://img.shields.io/npm/dt/vue-cli-plugin-vite.svg" style="max-width:100%;">
   </a>
-  <a href="https://github.com/IndexXuan/vue-cli-plugin-vite#readme">
-    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" style="max-width:100%;">
+  <a href="https://www.npmjs.com/package/vue-cli-plugin-vite" rel="nofollow" target="_blank">
+    <img alt="download monthly" src="https://img.shields.io/npm/dm/vue-cli-plugin-vite.svg" style="max-width:100%;">
   </a>
-  <a href="https://github.com/IndexXuan/vue-cli-plugin-vite/graphs/commit-activity">
+  <br />
+  <a href="https://github.com/IndexXuan/vue-cli-plugin-vite/actions/workflows/ci.yml" target="_blank">
+    <img alt="CI" src="https://github.com/IndexXuan/vue-cli-plugin-vite/actions/workflows/ci.yml/badge.svg" style="max-width:100%;">
+  </a>
+  <!-- <a href="https://github.com/IndexXuan/vue-cli-plugin-vite#readme"> -->
+  <!--   <img alt="Documentation" src="https://img.shields.io/badge/Doc-yes-brightgreen.svg" style="max-width:100%;"> -->
+  <!-- </a> -->
+  <a href="https://github.com/IndexXuan/vue-cli-plugin-vite/graphs/commit-activity" target="_blank">
     <img alt="Maintenance" src="https://img.shields.io/badge/Maintained-yes-green.svg" style="max-width:100%;">
   </a>
-  <a href="https://github.com/IndexXuan/vue-cli-plugin-vite/blob/main/LICENSE">
+  <a href="https://github.com/IndexXuan/vue-cli-plugin-vite/blob/main/LICENSE" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" style="max-width:100%;">
   </a>
   <!-- <a href="https://twitter.com/indexxuan" rel="nofollow"> -->
@@ -49,9 +53,9 @@
 - [Troubleshooting](#troubleshooting)
   - [Vite Build Support](#vite-build-support)
   - [How to completely migrate to vite in the future](#how-to-completely-migrate-to-vite-in-the-future)
-  - [some module response 404 not found](#some-module-response-404-not-found)
+  - [Some module response 404 not found](#some-module-response-404-not-found)
   - [Custom Style missing fonts](#custom-style-missing-fonts)
-  - [jsx support](#jsx-support)
+  - [JSX support](#jsx-support)
   - [Vue3 support](#vue3-support)
 - [Benefits](#benefits)
   - [Best development-experience right now](#best-development-experience-right-now)
@@ -198,11 +202,11 @@ you can clone/fork this repo, under examples/*
 - safely copy `./node_modules/vite-plugin-vue-cli/config/index.ts` to `$projectRoot/vite.config.ts` and install corresponding vite-plugin list by it
 - add npm scripts `dev: vite` & `build: vite build`, remove other vue-cli scripts, like `serve`
 - migrate all `require.context` to `import.meta.glob/globEager`
-- remove all `webpack plugins` and migrate all vue.config.js setted chainWebpack/configureWebpack to corresponding vite plugin or options
+- remove all `webpack plugins`/`vue-cli plugins` and migrate all vue.config.js setted chainWebpack/configureWebpack to corresponding vite plugin or options
 - deps & devDeps cleanup
 - other cleanup and tests
 
-### some module response 404 not found
+### Some module response 404 not found
 - if not compiler errors, maybe you import vue file without `.vue` ext, added it and it is required for vite and recommended for vue-cli (and required in vue-cli 5.x)
 
 ### Custom Style missing fonts
@@ -218,7 +222,7 @@ $--font-path: '~element-plus/lib/theme-chalk/fonts'; // changed to 'path/to/node
 @import "~element-plus/packages/theme-chalk/src/index"; // remove '~', both css-loader and vite support it
 ```
 
-### jsx support
+### JSX support
 - see options above, vitePluginVue2Options: { jsx: true }
 - you may also see that `React is not defined`, it is you use jsx without set vitePluginVue2Options: { jsx: true }
 
