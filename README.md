@@ -1,5 +1,7 @@
 # Use Vite Today
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/a2369ab4f42d47da84cda41799060fc0)](https://app.codacy.com/gh/IndexXuan/vue-cli-plugin-vite?utm_source=github.com&utm_medium=referral&utm_content=IndexXuan/vue-cli-plugin-vite&utm_campaign=Badge_Grade_Settings)
+
 > out-of-box for vue-cli projects without any codebase modifications.
 
 <p align="center">
