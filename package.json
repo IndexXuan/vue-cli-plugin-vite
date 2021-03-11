@@ -28,7 +28,7 @@
   ],
   "dependencies": {
     "vite": "2.0.5",
-    "vite-plugin-env-compatible": "0.1.0",
+    "vite-plugin-env-compatible": "0.2.0",
     "vite-plugin-mpa": "0.3.1",
     "vite-plugin-vue-cli": "0.4.2",
     "vite-plugin-vue2": "1.2.2"
