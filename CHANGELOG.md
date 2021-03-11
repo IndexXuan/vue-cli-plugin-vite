@@ -1,3 +1,13 @@
+<a name="0.3.3"></a>
+## [0.3.3](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v0.3.2...v0.3.3) (2021-03-11)
+
+
+### Bug Fixes
+
+* pre define process.env.VITE to fix env not in .env.* files ([d595122](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/d595122))
+
+
+
 <a name="0.3.2"></a>
 ## [0.3.2](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v0.3.1...v0.3.2) (2021-03-05)
 
