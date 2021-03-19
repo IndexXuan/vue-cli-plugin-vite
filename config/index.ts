@@ -1,5 +1,5 @@
 import path from 'path'
-import { defineConfig } from 'vite'
+import { defineConfig, Plugin } from 'vite'
 import Config from 'webpack-chain'
 import merge from 'webpack-merge'
 import { createVuePlugin } from 'vite-plugin-vue2'
@@ -50,14 +50,15 @@ const aliasOfConfigureWebpackFunctionMode = (() => {
     if (res) {
       return res.resolve.alias || {}
     }
-    return originConfig.resolve.alias || {}
+    return (originConfig.resolve && originConfig.resolve.alias) || {}
   }
 })()
 const alias = {
   // @see {@link https://github.com/vuejs/vue-cli/blob/0dccc4af380da5dc269abbbaac7387c0348c2197/packages/%40vue/cli-service/lib/config/base.js#L70}
   vue: runtimeCompiler ? 'vue/dist/vue.esm.js' : 'vue/dist/vue.runtime.esm.js',
   '@': resolve('src'),
-  '~': '',
+  // TODO: @see {@link https://github.com/vitejs/vite/issues/2185#issuecomment-784637827}
+  // '~': '',
   // high-priority for user-provided alias
   ...aliasOfConfigureWebpackObjectMode,
   ...aliasOfConfigureWebpackFunctionMode,
@@ -77,7 +78,7 @@ const plugins = [
       })
     : undefined,
   ...extraPlugins,
-].filter(Boolean)
+].filter(Boolean) as Plugin[]
 
 // @see https://vitejs.dev/config/
 export default defineConfig({
