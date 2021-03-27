@@ -146,6 +146,7 @@ the plugin\'s generator will write some `main.html` for corresponding main.{js,t
 |     Config File                  | 1. vue.config.js    | 1. vite.config.ts. <br />2. support use --config to locate |
 |     MPA Support                  | 1. native support by `options.pages`. <br />2. with history rewrite support | 1. native support by `rollupOptions.input` |
 |     Special Syntax               | 1. require(by webpack) <br /> 2. require.context(by webpack) <br />2. use `~some-module/dist/index.css`(by `css-loader`) <br />3. module.hot for HMR | 1. import.meta.glob/globEager <br />2. native support by vite, use `module/dist/index.css` directly <br />3. import.meta.hot for HMR  |
+|     Local Server                  | 1. [webpack dev-server](https://webpack.js.org/configuration/dev-server/) <br />2. express-style middleware and many extension api.  | 1. [connect](https://github.com/senchalabs/connect) <br />2. connect middleware |
 
 
 ## Milestones
