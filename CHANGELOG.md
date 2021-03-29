@@ -1,3 +1,21 @@
+<a name="0.4.0"></a>
+# [0.4.0](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v0.3.3...v0.4.0) (2021-03-29)
+
+
+### Bug Fixes
+
+* remove unuse file ([60826bc](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/60826bc))
+
+
+### Features
+
+* add init html prompt ([5d97af5](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/5d97af5))
+* set strictPort false ([57fe62e](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/57fe62e))
+* support all.all and alias(by vite-plugin-vue-cli@0.6.0) ([37ba5b8](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/37ba5b8))
+* update readme ([c98bf32](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/c98bf32))
+
+
+
 <a name="0.3.3"></a>
 ## [0.3.3](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v0.3.2...v0.3.3) (2021-03-11)
 
