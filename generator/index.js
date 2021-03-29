@@ -1,4 +1,4 @@
-const { writeMainDotHtml4EachEntry } = require('../lib/utils')
+const { writeHtmlFromPublic, writeMainDotHtml4EachEntry } = require('../lib/utils')
 
 module.exports = (api, options = {}) => {
   // 1. extend package
@@ -14,7 +14,12 @@ module.exports = (api, options = {}) => {
 
   // 3. logger
   api.onCreateComplete(() => {
-    writeMainDotHtml4EachEntry(api.resolve('.'))
+    const root = api.resolve('.')
+    if (options.htmlInitMethod === 'vue-cli') {
+      writeHtmlFromPublic(root)
+    } else {
+      writeMainDotHtml4EachEntry(root)
+    }
     api.exitLog('use vite for development by `yarn vite`', 'info')
   })
 }
