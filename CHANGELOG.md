@@ -1,3 +1,13 @@
+<a name="0.4.1"></a>
+## [0.4.1](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v0.4.0...v0.4.1) (2021-04-01)
+
+
+### Bug Fixes
+
+* support to replace webpack plugin var ([e6160f2](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/e6160f2))
+
+
+
 <a name="0.4.0"></a>
 # [0.4.0](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v0.3.3...v0.4.0) (2021-03-29)
 
