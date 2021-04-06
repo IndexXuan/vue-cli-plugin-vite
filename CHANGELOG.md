@@ -1,3 +1,18 @@
+<a name="0.4.4"></a>
+## [0.4.4](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v0.4.3...v0.4.4) (2021-04-06)
+
+
+
+<a name="0.4.3"></a>
+## [0.4.3](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v0.4.2...v0.4.3) (2021-04-03)
+
+
+### Features
+
+* update vite-plugin-vue2@1.4.3 ([d84d262](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/d84d262)) 
+
+
+
 <a name="0.4.2"></a>
 ## [0.4.2](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v0.4.1...v0.4.2) (2021-04-01)
 
