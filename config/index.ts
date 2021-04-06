@@ -1,9 +1,9 @@
-import path from 'path'
-import { defineConfig, Plugin } from 'vite'
+import { defineConfig } from 'vite'
 import { createVuePlugin } from 'vite-plugin-vue2'
 import envCompatible from 'vite-plugin-env-compatible'
 import vueCli, { VueCliOptions } from 'vite-plugin-vue-cli'
 import mpa from 'vite-plugin-mpa'
+import path from 'path'
 import { Options } from './options'
 import { name } from '../package.json'
 
@@ -29,21 +29,19 @@ if (viteOptions.alias) {
 
 const useMPA = Boolean(vueConfig.pages)
 
-const plugins = [
-  envCompatible(),
-  vueCli(vueConfig),
-  createVuePlugin(viteOptions.vitePluginVue2Options),
-  useMPA
-    ? mpa({
-        // special use main.html for vue-cli
-        filename: 'main.html',
-      })
-    : undefined,
-  ...extraPlugins,
-].filter(Boolean) as Plugin[]
-
 // @see https://vitejs.dev/config/
 export default defineConfig({
-  plugins,
+  plugins: [
+    envCompatible(),
+    vueCli(),
+    createVuePlugin(viteOptions.vitePluginVue2Options),
+    useMPA
+      ? mpa({
+          // special use main.html for vue-cli
+          filename: 'main.html',
+        })
+      : undefined,
+    ...extraPlugins,
+  ],
   optimizeDeps: viteOptions.optimizeDeps,
 })

@@ -31,7 +31,7 @@
     "vite": "2.1.5",
     "vite-plugin-env-compatible": "0.2.1",
     "vite-plugin-mpa": "0.3.1",
-    "vite-plugin-vue-cli": "0.7.0",
+    "vite-plugin-vue-cli": "0.7.1",
     "vite-plugin-vue2": "1.4.3"
   },
   "devDependencies": {
@@ -45,6 +45,7 @@
     "fast-glob": "^3.2.5",
     "lint-staged": "10.5.4",
     "markdown-toc": "^1.2.0",
+    "prettier": "^2.2.1",
     "yorkie": "2.0.0"
   },
   "prettier": {
@@ -57,7 +58,7 @@
     "trailingComma": "all",
     "bracketSpacing": true,
     "jsxBracketSameLine": false,
-    "arrowParens": "avoid"
+    "arrowParens": "always"
   },
   "config": {
     "commitizen": {
