@@ -1,6 +1,6 @@
 {
   "name": "vue-cli-plugin-vite",
-  "version": "0.4.3",
+  "version": "0.4.4",
   "description": "out-of-box vite dev for vue-cli project",
   "main": "index.js",
   "author": "indexxuan@gmail.com",
