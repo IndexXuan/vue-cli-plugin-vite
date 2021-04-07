@@ -75,7 +75,6 @@ vue add vite
 # NOTE you cannot directly use `vite` or `npx vite` since it is origin vite not this plugin.
 yarn vite // or npm run vite
 ```
-the plugin\'s generator will write some `main.html` for corresponding main.{js,ts}, since vite need html file for dev-server entry file
 
 
 ## Motivation
@@ -127,12 +126,10 @@ the plugin\'s generator will write some `main.html` for corresponding main.{js,t
 
 ### Compatibility
 - **NO EXTRA** files, code and dependencies injected
-    - injected corresponding main.html
-        - SPA: `projectRoot/main.html`
-        - MPA: `projectRoot/src/pages/*/main.html`(s)
     - injected one devDependency `vue-cli-plugin-vite`
     - injected one line code in `package.json#scripts#vite` and one file at `bin/vite`
 - auto-resolved as much options as we can from `vue.config.js` (publicPath, alias, outputDir...)
+- auto reuse public/index.html as vite html entry template
 - compatible the differences between vue-cli and vite(environment variables, special syntax...)
 
 
@@ -255,6 +252,7 @@ $--font-path: '~element-plus/lib/theme-chalk/fonts'; // changed to 'path/to/node
 ## Relevant Vite Plugins
 - [vite-plugin-vue2@underfin](https://github.com/underfin/vite-plugin-vue2)
 - [vite-plugin-env-compatible](https://github.com/IndexXuan/vite-plugin-env-compatible)
+- [vite-plugin-html-template](https://github.com/IndexXuan/vite-plugin-html-template)
 - [vite-plugin-vue-cli](https://github.com/IndexXuan/vite-plugin-vue-cli)
 - [vite-plugin-mpa](https://github.com/IndexXuan/vite-plugin-mpa)
 

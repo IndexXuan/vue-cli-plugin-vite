@@ -1,3 +1,18 @@
+<a name="1.0.0-rc.0"></a>
+# [1.0.0-rc.0](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v0.4.4...v1.0.0-rc.0) (2021-04-07)
+
+
+### Features
+
+* add vite-plugin-html-template ([b7f0917](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/b7f0917))
+
+
+
+<a name="0.4.4"></a>
+## [0.4.4](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v0.4.3...v0.4.4) (2021-04-06)
+
+
+
 <a name="0.4.4"></a>
 ## [0.4.4](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v0.4.3...v0.4.4) (2021-04-06)
 
