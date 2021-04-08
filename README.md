@@ -220,7 +220,7 @@ $--color-primary: teal;
 /* icon font path, required */
 $--font-path: '~element-plus/lib/theme-chalk/fonts'; // changed to 'path/to/node_modules/element-plus/lib/theme-chalk/fonts;' (TOOD: can vite support it ?)
 
-@import "~element-plus/packages/theme-chalk/src/index"; // remove '~', both css-loader and vite support it
+@import "~element-plus/packages/theme-chalk/src/index"; // changed to 'path/to/node_modules/element-plus/packages/theme-chalk/src/index' (TODO: maybe have workaround)
 ```
 
 ### JSX support
@@ -253,9 +253,9 @@ $--font-path: '~element-plus/lib/theme-chalk/fonts'; // changed to 'path/to/node
 
 
 ## Relevant Vite Plugins
-- [vite-plugin-vue2@underfin](https://github.com/underfin/vite-plugin-vue2)
-- [vite-plugin-env-compatible](https://github.com/IndexXuan/vite-plugin-env-compatible)
-- [vite-plugin-html-template](https://github.com/IndexXuan/vite-plugin-html-template)
-- [vite-plugin-vue-cli](https://github.com/IndexXuan/vite-plugin-vue-cli)
-- [vite-plugin-mpa](https://github.com/IndexXuan/vite-plugin-mpa)
+- [vite-plugin-vue2@underfin](https://github.com/underfin/vite-plugin-vue2) - Vue2.x support for vite
+- [vite-plugin-env-compatible](https://github.com/IndexXuan/vite-plugin-env-compatible) - env compatibility for vite with vue-cli
+- [vite-plugin-html-template](https://github.com/IndexXuan/vite-plugin-html-template) - like html-webpack-plugin for webpack
+- [vite-plugin-vue-cli](https://github.com/IndexXuan/vite-plugin-vue-cli) - infer vite config from vue.config.js
+- [vite-plugin-mpa](https://github.com/IndexXuan/vite-plugin-mpa) - MPA support for vite
 
