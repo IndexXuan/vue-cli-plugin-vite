@@ -174,6 +174,9 @@ yarn vite // or npm run vite
         - ✅ also resolved from `vue.config.js#runtimeCompiler`
 - ✅ MPA Support
     - ✅ same development experience and build result
+- ✅ Build Support (as of 1.0.0-rc.0, no real html entry file generated, just reuse public/index.html of vue-cli)
+    - ✅ Support SPA Build
+    - ✅ Support MPA Build
 - ✅ Special Synatax
     - ❌ require('xxx') or require('xxx').default, most of the case, it can be replaced by dynamicImport ( import('xxx') or import('xxx').then(module => module.default) )
     - ❌ '~some-module' syntax for Import CSS (maybe [#2185](https://github.com/vitejs/vite/issues/2185#issuecomment-784637827))

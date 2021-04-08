@@ -16,7 +16,9 @@ let vueConfig: VueCliOptions = {}
 try {
   vueConfig = require(resolve('vue.config.js')) || {}
 } catch (e) {
-  console.error(chalk.redBright(e))
+  if (process.env.VITE_DEBUG) {
+    console.error(chalk.redBright(e))
+  }
   /**/
 }
 
@@ -36,7 +38,8 @@ const useMPA = Boolean(vueConfig.pages)
 export default defineConfig({
   plugins: [
     envCompatible(),
-    htmlTemplate({ mpa: useMPA }),
+    // auto infer pages
+    htmlTemplate({ pages: vueConfig.pages || {} }),
     vueCli(),
     createVuePlugin(viteOptions.vitePluginVue2Options),
     useMPA
