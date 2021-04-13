@@ -10,6 +10,7 @@
   <!-- <a href="https://github.com/IndexXuan/vue-cli-plugin-vite/actions/workflows/npm-publish.yml"> -->
   <!--   <img alt="NPM Publish" src="https://github.com/IndexXuan/vue-cli-plugin-vite/actions/workflows/npm-publish.yml/badge.svg?branch=main" style="max-width:100%;"> -->
   <!-- </a> -->
+  <img alt="wakatime" src="https://wakatime.com/badge/github/IndexXuan/vue-cli-plugin-vite.svg" />
   <a href="https://www.npmjs.com/package/vue-cli-plugin-vite" rel="nofollow" target="_blank">
     <img alt="npm version" src="https://img.shields.io/npm/v/vue-cli-plugin-vite.svg" style="max-width:100%;">
   </a>
