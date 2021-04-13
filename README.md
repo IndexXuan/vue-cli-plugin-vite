@@ -52,12 +52,6 @@
 - [Milestones](#milestones)
 - [Examples](#examples)
 - [Troubleshooting](#troubleshooting)
-  - [Vite Build Support](#vite-build-support)
-  - [How to completely migrate to vite in the future](#how-to-completely-migrate-to-vite-in-the-future)
-  - [Some module response 404 not found](#some-module-response-404-not-found)
-  - [Custom Style missing fonts](#custom-style-missing-fonts)
-  - [JSX support](#jsx-support)
-  - [Vue3 support](#vue3-support)
 - [Benefits](#benefits)
   - [Best development-experience right now](#best-development-experience-right-now)
   - [Migration to vite smoothly](#migration-to-vite-smoothly)
@@ -192,44 +186,7 @@ yarn vite // or npm run vite
 you can clone/fork this repo, under examples/*
 
 ## Troubleshooting
-
-### Vite Build Support
-- Currently only support vite dev for development, you should still use yarn build(vue-cli-service build)
-- But you can use `BUILD=true MODERN=true yarn vite` to invoke vite build(no legacy and use esbuild minify, not recommended, please use yarn build instead)
-
-### How to completely migrate to vite in the future
-- if this plugin help you fix error and use vite successfully, it is not too hard to migrate, compared to directly migrate from vue-cli or others
-- safely replace all `VUE_APP_` to `VITE_` code (e.g. .env.*)
-- safely replace all `process.env.VUE_APP_` to `import.meta.env.VITE_` in client-side code.
-- safely copy `./node_modules/vite-plugin-vue-cli/config/index.ts` to `$projectRoot/vite.config.ts` and install corresponding vite-plugin list by it
-- add npm scripts `dev: vite` & `build: vite build`, remove other vue-cli scripts, like `serve`
-- migrate all `require.context` to `import.meta.glob/globEager`
-- remove all `webpack plugins`/`vue-cli plugins` and migrate all vue.config.js setted chainWebpack/configureWebpack to corresponding vite plugin or options
-- deps & devDeps cleanup
-- other cleanup and tests
-
-### Some module response 404 not found
-- if not compiler errors, maybe you import vue file without `.vue` ext, added it and it is required for vite and recommended for vue-cli (and required in vue-cli 5.x)
-
-### Custom Style missing fonts
-- e.g. element-plus: https://element-plus.gitee.io/#/en-US/component/custom-theme
-
-```scss
-/* theme color */
-$--color-primary: teal;
-
-/* icon font path, required */
-$--font-path: '~element-plus/lib/theme-chalk/fonts'; // changed to 'path/to/node_modules/element-plus/lib/theme-chalk/fonts;' (TOOD: can vite support it ?)
-
-@import "~element-plus/packages/theme-chalk/src/index"; // changed to 'path/to/node_modules/element-plus/packages/theme-chalk/src/index' (TODO: maybe have workaround)
-```
-
-### JSX support
-- see options above, vitePluginVue2Options: { jsx: true }
-- you may also see that `React is not defined`, it is you use jsx without set vitePluginVue2Options: { jsx: true }
-
-### Vue3 support
-- currently only support Vue2.x, since Vue3.x you can use vite directly
+- @see https://github.com/IndexXuan/vue-cli-plugin-vite/issues/9
 
 
 ## Benefits

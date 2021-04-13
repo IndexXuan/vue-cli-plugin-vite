@@ -71,7 +71,7 @@
     }
   },
   "gitHooks": {
-    "pre-commit": "yarn toc && yarn changelog && git add . && lint-staged",
+    "pre-commit": "yarn changelog && git add . && lint-staged",
     "commit-msg": "commitlint -e $GIT_PARAMS"
   },
   "lint-staged": {
