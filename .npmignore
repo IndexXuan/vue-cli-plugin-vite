@@ -3,3 +3,5 @@ yarn-error.log
 logo.png
 .github
 .prettierignore
+.commitlintrc.js
+.cz-configrc.js
