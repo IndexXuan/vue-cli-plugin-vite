@@ -1,3 +1,13 @@
+<a name="1.0.0-rc.2"></a>
+# [1.0.0-rc.2](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v1.0.0-rc.1...v1.0.0-rc.2) (2021-04-14)
+
+
+### Bug Fixes
+
+* use cross-spawn (close [#22](https://github.com/IndexXuan/vue-cli-plugin-vite/issues/22)) ([50c2e51](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/50c2e51))
+
+
+
 <a name="1.0.0-rc.1"></a>
 # [1.0.0-rc.1](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v1.0.0-rc.0...v1.0.0-rc.1) (2021-04-08)
 
