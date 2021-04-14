@@ -29,6 +29,7 @@
   ],
   "dependencies": {
     "chalk": "4.1.0",
+    "cross-spawn": "7.0.3",
     "vite": "2.1.5",
     "vite-plugin-env-compatible": "0.2.1",
     "vite-plugin-html-template": "0.2.0",
