@@ -1,3 +1,13 @@
+<a name="1.0.0-rc.4"></a>
+# [1.0.0-rc.4](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v1.0.0-rc.3...v1.0.0-rc.4) (2021-04-20)
+
+
+### Features
+
+* support Vue 3 ([5d0d540](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/5d0d540))
+
+
+
 <a name="1.0.0-rc.3"></a>
 # [1.0.0-rc.3](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v1.0.0-rc.2...v1.0.0-rc.3) (2021-04-15)
 
