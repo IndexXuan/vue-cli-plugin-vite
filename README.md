@@ -219,9 +219,11 @@ you can clone/fork this repo, under examples/*
 
 
 ## Relevant Vite Plugins
-- [vite-plugin-vue2@underfin](https://github.com/underfin/vite-plugin-vue2) - Vue2.x support for vite
-- [vite-plugin-env-compatible](https://github.com/IndexXuan/vite-plugin-env-compatible) - env compatibility for vite with vue-cli
-- [vite-plugin-html-template](https://github.com/IndexXuan/vite-plugin-html-template) - like html-webpack-plugin for webpack
-- [vite-plugin-vue-cli](https://github.com/IndexXuan/vite-plugin-vue-cli) - infer vite config from vue.config.js
-- [vite-plugin-mpa](https://github.com/IndexXuan/vite-plugin-mpa) - MPA support for vite
+- [vite-plugin-vue2@underfin](https://github.com/underfin/vite-plugin-vue2) - Vue 2 support for vite.
+- [@vitejs/plugin-vue](https://github.com/vitejs/vite/tree/main/packages/plugin-vue) - Official Vue 3 plugin.
+- [@vitejs/plugin-vue-jsx](https://github.com/vitejs/vite/tree/main/packages/plugin-vue-jsx) - Official Vue 3 jsx plugin.
+- [vite-plugin-env-compatible](https://github.com/IndexXuan/vite-plugin-env-compatible) - Env compatibility for vite with vue-cli.
+- [vite-plugin-html-template](https://github.com/IndexXuan/vite-plugin-html-template) - Like html-webpack-plugin for webpack.
+- [vite-plugin-vue-cli](https://github.com/IndexXuan/vite-plugin-vue-cli) - Infer vite config from vue.config.js.
+- [vite-plugin-mpa](https://github.com/IndexXuan/vite-plugin-mpa) - MPA support for vite.
 
