@@ -102,7 +102,7 @@ yarn vite // or npm run vite
       plugins: [], // other vite plugins list, will be merge into this plugin\'s underlying vite.config.ts
       /**
        * you can enable jsx support by setting { jsx: true }
-       * @see https://github.com/underfin/vite-plugin-vue2#options
+       * @see {@link https://github.com/underfin/vite-plugin-vue2#options}
        * @default {}
        */
       vitePluginVue2Options: {},
@@ -116,6 +116,7 @@ yarn vite // or npm run vite
       },
       /**
        * Vite UserConfig.optimizeDeps options
+       * recommended set `include` for speedup page-loaded time
        * @default {}
        */
       optimizeDeps: {}
@@ -182,7 +183,7 @@ yarn vite // or npm run vite
     - ✅ Support MPA Build
 - ✅ Special Synatax
     - ❌ require('xxx') or require('xxx').default, most of the case, it can be replaced by dynamicImport ( import('xxx') or import('xxx').then(module => module.default) )
-    - ❌ '~some-module' syntax for Import CSS (maybe [#2185](https://github.com/vitejs/vite/issues/2185#issuecomment-784637827))
+    - ✅ import '~some-module/theme/index.css' syntax for Import CSS [supported by vite#2185](https://github.com/vitejs/vite/issues/2185#issuecomment-784637827))
     - ✅ require.context compatibility
     - ✅ module.hot compatibility
 
@@ -194,7 +195,7 @@ yarn vite // or npm run vite
 you can clone/fork this repo, under examples/*
 
 ## Troubleshooting
-- @see https://github.com/IndexXuan/vue-cli-plugin-vite/issues/9
+- [see #9](https://github.com/IndexXuan/vue-cli-plugin-vite/issues/9)
 
 
 ## Benefits

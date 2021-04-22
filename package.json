@@ -39,7 +39,7 @@
     "vite-plugin-env-compatible": "0.2.1",
     "vite-plugin-html-template": "0.3.0",
     "vite-plugin-mpa": "0.3.1",
-    "vite-plugin-vue-cli": "1.0.0-rc.1",
+    "vite-plugin-vue-cli": "1.0.0-rc.2",
     "vite-plugin-vue2": "1.4.3"
   },
   "devDependencies": {
