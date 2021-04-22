@@ -1,3 +1,13 @@
+<a name="1.0.0-rc.5"></a>
+# [1.0.0-rc.5](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v1.0.0-rc.4...v1.0.0-rc.5) (2021-04-22)
+
+
+### Features
+
+* support import css by `~` prefix ([755a494](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/755a494))
+
+
+
 <a name="1.0.0-rc.4"></a>
 # [1.0.0-rc.4](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v1.0.0-rc.3...v1.0.0-rc.4) (2021-04-20)
 
