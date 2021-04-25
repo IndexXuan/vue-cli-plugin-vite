@@ -4,7 +4,7 @@
 
 ### Features
 
-* support import css by `~` prefix ([755a494](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/755a494))
+* support import css by `~` prefix(for compatibility) ([755a494](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/755a494))
 
 
 
@@ -24,7 +24,7 @@
 
 ### Features
 
-* update html-template plugin ([94a6df5](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/94a6df5))
+* update html-template plugin for more vars supported in html template ([94a6df5](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/94a6df5))
 
 
 
@@ -34,7 +34,7 @@
 
 ### Bug Fixes
 
-* use cross-spawn (close [#22](https://github.com/IndexXuan/vue-cli-plugin-vite/issues/22)) ([50c2e51](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/50c2e51))
+* use cross-spawn(for windows) (close [#22](https://github.com/IndexXuan/vue-cli-plugin-vite/issues/22)) ([50c2e51](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/50c2e51))
 
 
 
@@ -44,7 +44,7 @@
 
 ### Features
 
-* support build ([5ec5a98](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/5ec5a98))
+* support build(with vite-plugin-html-template) ([5ec5a98](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/5ec5a98))
 
 
 
@@ -54,27 +54,14 @@
 
 ### Features
 
-* add vite-plugin-html-template ([df6ab6f](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/df6ab6f))
-
-
-
-<a name="1.0.0-rc.0"></a>
-# [1.0.0-rc.0](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v0.4.4...v1.0.0-rc.0) (2021-04-07)
-
-
-### Features
-
-* add vite-plugin-html-template ([b7f0917](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/b7f0917))
+* add vite-plugin-html-template(no need for main.html anymore) ([df6ab6f](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/df6ab6f))
 
 
 
 <a name="0.4.4"></a>
 ## [0.4.4](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v0.4.3...v0.4.4) (2021-04-06)
 
-
-
-<a name="0.4.4"></a>
-## [0.4.4](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v0.4.3...v0.4.4) (2021-04-06)
+* inner changes
 
 
 
