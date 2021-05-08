@@ -1,3 +1,13 @@
+<a name="1.0.0-rc.6"></a>
+# [1.0.0-rc.6](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v1.0.0-rc.5...v1.0.0-rc.6) (2021-05-08)
+
+
+### Features
+
+* update deps, better entry file injection ([9f81269](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/9f81269))
+
+
+
 <a name="1.0.0-rc.5"></a>
 # [1.0.0-rc.5](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v1.0.0-rc.4...v1.0.0-rc.5) (2021-04-22)
 
