@@ -56,7 +56,7 @@ export default defineConfig({
   plugins: [
     envCompatible(),
     // auto infer pages
-    htmlTemplate({ pages: vueConfig.pages || {} }),
+    htmlTemplate(vueConfig.pages ? { pages: vueConfig.pages } : undefined),
     vueCli(),
     // lazyload plugin for vue-template-compiler mismatch errors.
     vueVersion === 2
