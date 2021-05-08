@@ -1,3 +1,13 @@
+<a name="1.0.0"></a>
+# [1.0.0](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v1.0.0-rc.6...v1.0.0) (2021-05-08)
+
+
+### Features
+
+* update deps, ready for v1.0.0 ([3b69722](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/3b69722))
+
+
+
 <a name="1.0.0-rc.6"></a>
 # [1.0.0-rc.6](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v1.0.0-rc.5...v1.0.0-rc.6) (2021-05-08)
 
