@@ -86,15 +86,6 @@ yarn vite // or npm run vite
   // ...
   pluginOptions: {
     vite: {
-      ///**
-      // * deprecated since v0.2.2. we can auto-resolve alias from vue.config.js
-      // * @ is setted by the plugin, you can set others used in your projects, like @components
-      // * Record<string, string>
-      // * @default {}
-      // */
-      // alias: {
-      //   '@components': path.resolve(__dirname, './src/components'),
-      // },
       /**
        * Plugin[]
        * @default []

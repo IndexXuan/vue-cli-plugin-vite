@@ -20,7 +20,6 @@ try {
   if (process.env.VITE_DEBUG) {
     console.error(chalk.redBright(e))
   }
-  /**/
 }
 
 /**
@@ -35,19 +34,9 @@ try {
 const pluginOptions = vueConfig.pluginOptions || {}
 const viteOptions: Options = pluginOptions.vite || {}
 const extraPlugins = viteOptions.plugins || []
-
-// TODO: remove it when v1.0.0 stable
-if (viteOptions.alias) {
-  console.log(
-    chalk.cyan(
-      `[${name}]: pluginOptions.vite.alias is deprecated, will auto-resolve from chainWebpack / configureWebpack`,
-    ),
-  )
-}
-
-const useMPA = Boolean(vueConfig.pages)
 const vitePluginVue2Options = viteOptions.vitePluginVue2Options || {}
 const vitePluginVue3Options = viteOptions.vitePluginVue3Options || {}
+const useMPA = Boolean(vueConfig.pages)
 
 /**
  * @see {@link https://vitejs.dev/config/}
