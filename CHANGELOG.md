@@ -1,3 +1,13 @@
+<a name="1.0.1"></a>
+## [1.0.1](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v1.0.0...v1.0.1) (2021-05-10)
+
+
+### Features
+
+* remove pluginOptions#vite.alias ([c4b7ca8](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/c4b7ca8))
+
+
+
 <a name="1.0.0"></a>
 # [1.0.0](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v1.0.0-rc.6...v1.0.0) (2021-05-08)
 
