@@ -34,7 +34,7 @@
     "@vitejs/plugin-vue-jsx": "1.1.4",
     "vite": "2.2.4",
     "vite-plugin-env-compatible": "1.0.0",
-    "vite-plugin-html-template": "1.0.0",
+    "vite-plugin-html-template": "1.0.1",
     "vite-plugin-mpa": "1.0.0",
     "vite-plugin-vue-cli": "1.0.0",
     "vite-plugin-vue2": "1.5.1",
