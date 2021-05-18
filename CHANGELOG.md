@@ -1,3 +1,13 @@
+<a name="1.0.2"></a>
+## [1.0.2](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v1.0.1...v1.0.2) (2021-05-18)
+
+
+### Bug Fixes
+
+* fix MPA entry file injection ([71418c9](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/71418c9))
+
+
+
 <a name="1.0.1"></a>
 ## [1.0.1](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v1.0.0...v1.0.1) (2021-05-10)
 
