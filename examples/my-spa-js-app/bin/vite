@@ -2,7 +2,7 @@
 
 const path = require('path')
 const { spawn } = require('child_process')
-const configPath = require.resolve('../../../config/index.ts')
+const configPath = require.resolve('vue-cli-plugin-vite/config/index.ts')
 const cwd = path.resolve(__dirname, '../')
 
 const params = [
