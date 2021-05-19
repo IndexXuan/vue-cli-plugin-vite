@@ -59,5 +59,8 @@ export default defineConfig({
     useMPA ? mpa() : undefined,
     ...extraPlugins,
   ],
-  optimizeDeps: viteOptions.optimizeDeps,
+  optimizeDeps: viteOptions.optimizeDeps || {
+    /** @see {@link https://github.com/IndexXuan/vue-cli-plugin-vite/issues/27} */
+    include: ['vue'],
+  },
 })
