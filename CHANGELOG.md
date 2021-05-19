@@ -1,3 +1,13 @@
+<a name="1.0.3"></a>
+## [1.0.3](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v1.0.2...v1.0.3) (2021-05-19)
+
+
+### Bug Fixes
+
+* fix Vue3 dev start(closed [#27](https://github.com/IndexXuan/vue-cli-plugin-vite/issues/27)) ([af2b4b1](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/af2b4b1))
+
+
+
 <a name="1.0.2"></a>
 ## [1.0.2](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v1.0.1...v1.0.2) (2021-05-18)
 
