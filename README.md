@@ -73,7 +73,7 @@ yarn vite // or npm run vite
 # 3. add optimizeDeps#include (optional and will speedup devServer start time a lot)
 # added in vue.config.js#pluginOptions.vite.optimizeDeps.include
 # e.g.: ['vue', 'vue-router', 'vuex']
-# all logged scaned deps can be added.
+# all scanned deps(logged in terminal) can be added for speedup.
 ```
 
 
