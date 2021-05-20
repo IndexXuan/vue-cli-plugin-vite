@@ -1,3 +1,13 @@
+<a name="1.1.0"></a>
+# [1.1.0](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v1.0.3...v1.1.0) (2021-05-20)
+
+
+### Features
+
+* disabled html-template if needed ([b6e04e7](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/b6e04e7))
+
+
+
 <a name="1.0.3"></a>
 ## [1.0.3](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v1.0.2...v1.0.3) (2021-05-19)
 
