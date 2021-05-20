@@ -4,11 +4,6 @@ import type vueJsx from '@vitejs/plugin-vue-jsx'
 
 export interface Options {
   /**
-   * @deprecated
-   * alias will be auto-resolve from vue.config.js's configureWebpack & chainWebpack
-   */
-  alias: Record<string, string>
-  /**
    * vite-plugin-vue2 Options
    * @see {@link https://github.com/underfin/vite-plugin-vue2#options}
    * @default {}
@@ -29,6 +24,13 @@ export interface Options {
   plugins: (Plugin | Plugin[])[]
   /**
    * vite optimizeDeps options
+   * @default { include: ['vue'] }
    */
   optimizeDeps: UserConfig['optimizeDeps']
+  /**
+   * do not use html-template, use real-world html entry.(e.g. projectRoot/index.html)
+   * @see {@link https://github.com/IndexXuan/vue-cli-plugin-vite/issues/28#issuecomment-844664231}
+   * @default false
+   */
+  disabledHtmlTemplate: boolean
 }

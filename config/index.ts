@@ -8,7 +8,6 @@ import mpa from 'vite-plugin-mpa'
 import path from 'path'
 import chalk from 'chalk'
 import type { Options } from './options'
-import { name } from '../package.json'
 
 const resolve = (p: string) => path.resolve(process.cwd(), p)
 
@@ -44,8 +43,6 @@ const useMPA = Boolean(vueConfig.pages)
 export default defineConfig({
   plugins: [
     envCompatible(),
-    // auto infer pages
-    htmlTemplate(vueConfig.pages ? { pages: vueConfig.pages } : undefined),
     vueCli(),
     // lazyload plugin for vue-template-compiler mismatch errors.
     vueVersion === 2
@@ -57,6 +54,10 @@ export default defineConfig({
             : undefined,
         ],
     useMPA ? mpa() : undefined,
+    // auto infer pages if needed.
+    viteOptions.disabledHtmlTemplate
+      ? undefined
+      : htmlTemplate(vueConfig.pages ? { pages: vueConfig.pages } : undefined),
     ...extraPlugins,
   ],
   optimizeDeps: viteOptions.optimizeDeps || {
