@@ -1,3 +1,13 @@
+<a name="1.1.1"></a>
+## [1.1.1](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v1.1.0...v1.1.1) (2021-05-20)
+
+
+### Bug Fixes
+
+* fix history mode SPA fallback(html template) ([a7d1a28](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/a7d1a28))
+
+
+
 <a name="1.1.0"></a>
 # [1.1.0](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v1.0.3...v1.1.0) (2021-05-20)
 
