@@ -1,3 +1,13 @@
+<a name="1.1.3"></a>
+## [1.1.3](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v1.1.2...v1.1.3) (2021-05-26)
+
+
+### Bug Fixes
+
+* fix vite auto pre-bundle deps ([1f20002](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/1f20002))
+
+
+
 <a name="1.1.2"></a>
 ## [1.1.2](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v1.1.1...v1.1.2) (2021-05-26)
 
