@@ -32,6 +32,7 @@ try {
 
 const pluginOptions = vueConfig.pluginOptions || {}
 const viteOptions: Options = pluginOptions.vite || {}
+const optimizeDeps = viteOptions.optimizeDeps || {}
 const extraPlugins = viteOptions.plugins || []
 const vitePluginVue2Options = viteOptions.vitePluginVue2Options || {}
 const vitePluginVue3Options = viteOptions.vitePluginVue3Options || {}
@@ -60,8 +61,12 @@ export default defineConfig({
       : htmlTemplate(vueConfig.pages ? { pages: vueConfig.pages } : undefined),
     ...extraPlugins,
   ],
-  optimizeDeps: viteOptions.optimizeDeps || {
-    /** @see {@link https://github.com/IndexXuan/vue-cli-plugin-vite/issues/27} */
-    include: ['vue'],
+  optimizeDeps: {
+    ...optimizeDeps,
+    /**
+     * vite auto scan html files and rollupOptions.input but vite-plugin-html-template cannot enforce pre.
+     * set explicit entries here. main.{js,ts} is the default vue-cli entries.
+     */
+    entries: ['**/main.{js,ts}', ...(optimizeDeps.entries || [])],
   },
 })
