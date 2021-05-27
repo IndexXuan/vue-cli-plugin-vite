@@ -1,3 +1,13 @@
+<a name="1.1.4"></a>
+## [1.1.4](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v1.1.3...v1.1.4) (2021-05-27)
+
+
+### Features
+
+* optimize for vue.config.js#pages ([c508c98](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/c508c98))
+
+
+
 <a name="1.1.3"></a>
 ## [1.1.3](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v1.1.2...v1.1.3) (2021-05-26)
 
