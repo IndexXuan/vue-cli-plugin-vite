@@ -30,14 +30,14 @@
   ],
   "dependencies": {
     "@types/semver": "7.3.4",
-    "@vitejs/plugin-vue": "1.2.2",
-    "@vitejs/plugin-vue-jsx": "1.1.4",
-    "vite": "2.3.3",
+    "@vitejs/plugin-vue": "1.2.3",
+    "@vitejs/plugin-vue-jsx": "1.1.5",
+    "vite": "2.3.6",
     "vite-plugin-env-compatible": "1.0.0",
     "vite-plugin-html-template": "1.0.4",
     "vite-plugin-mpa": "1.0.2",
     "vite-plugin-vue-cli": "1.0.1",
-    "vite-plugin-vue2": "1.5.1",
+    "vite-plugin-vue2": "1.5.2",
     "cross-spawn": "7.0.3",
     "semver": "7.3.5",
     "chalk": "4.1.0"
