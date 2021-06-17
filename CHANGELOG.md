@@ -1,3 +1,13 @@
+<a name="1.1.6"></a>
+## [1.1.6](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v1.1.5...v1.1.6) (2021-06-17)
+
+
+### Features
+
+* update deps for vite-plugin-vue2 & mpa ([790f965](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/790f965))
+
+
+
 <a name="1.1.5"></a>
 ## [1.1.5](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v1.1.4...v1.1.5) (2021-06-02)
 
