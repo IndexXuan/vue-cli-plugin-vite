@@ -5,6 +5,9 @@ import htmlTemplate from 'vite-plugin-html-template'
 import vueCli from 'vite-plugin-vue-cli'
 import type { VueCliOptions } from 'vite-plugin-vue-cli'
 import mpa from 'vite-plugin-mpa'
+import Checker from 'vite-plugin-checker'
+import { VlsChecker } from 'vite-plugin-checker-vls'
+import eslintPlugin from 'vite-plugin-eslint'
 import path from 'path'
 import chalk from 'chalk'
 import type { Options } from './options'
@@ -59,6 +62,26 @@ export default defineConfig({
     viteOptions.disabledHtmlTemplate
       ? undefined
       : htmlTemplate(vueConfig.pages ? { pages: vueConfig.pages } : undefined),
+    // since vue-cli have type-checker by default(but use webpack plugin instead of vls).
+    viteOptions.disabledTypeChecker
+      ? undefined
+      : Checker(
+          vueVersion === 2
+            ? {
+                vls: VlsChecker(/** advanced VLS options */),
+              }
+            : { vueTsc: true },
+        ),
+    // vue-cli enable eslint-loader by lintOnSave.
+    vueConfig.lintOnSave === false
+      ? undefined
+      : eslintPlugin({
+          /**
+           * deal with some virtual module like react/refresh or windicss.
+           * @see {@link https://github.com/gxmari007/vite-plugin-eslint/issues/1}
+           */
+          include: 'src/**/*.{vue,js,jsx,ts,tsx}',
+        }),
     ...extraPlugins,
   ],
   optimizeDeps: {

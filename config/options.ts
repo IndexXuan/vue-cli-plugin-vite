@@ -4,6 +4,11 @@ import type vueJsx from '@vitejs/plugin-vue-jsx'
 
 export interface Options {
   /**
+   * extra vite plugins
+   * @default []
+   */
+  plugins: (Plugin | Plugin[])[]
+  /**
    * vite-plugin-vue2 Options
    * @see {@link https://github.com/underfin/vite-plugin-vue2#options}
    * @default {}
@@ -18,10 +23,11 @@ export interface Options {
     jsx?: Parameters<typeof vueJsx>[0]
   }
   /**
-   * extra vite plugins
-   * @default []
+   * do not enable vite-plugin-checker and vite-plugin-check-vls(since v1.2.0)
+   * @see {@link https://github.com/fi3ework/vite-plugin-checker}
+   * @default false
    */
-  plugins: (Plugin | Plugin[])[]
+  disabledTypeChecker: boolean
   /**
    * vite optimizeDeps options
    * @default { include: ['vue'] }
@@ -30,6 +36,7 @@ export interface Options {
   /**
    * do not use html-template, use real-world html entry.(e.g. projectRoot/index.html)
    * @see {@link https://github.com/IndexXuan/vue-cli-plugin-vite/issues/28#issuecomment-844664231}
+   * @deprecated
    * @default false
    */
   disabledHtmlTemplate: boolean
