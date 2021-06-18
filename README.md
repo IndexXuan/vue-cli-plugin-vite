@@ -143,10 +143,14 @@ yarn vite // or npm run vite
 |     Config File                  | 1. vue.config.js    | 1. vite.config.ts. <br />2. support use --config to locate |
 |     MPA Support                  | 1. native support by `options.pages`. <br />2. with history rewrite support | 1. native support by `rollupOptions.input` |
 |     Special Syntax               | 1. require(by webpack) <br /> 2. require.context(by webpack) <br />2. use `~some-module/dist/index.css`(by `css-loader`) <br />3. module.hot for HMR | 1. import.meta.glob/globEager <br />2. native support by vite, use `module/dist/index.css` directly <br />3. import.meta.hot for HMR  |
-|     Local Server                  | 1. [webpack dev-server](https://webpack.js.org/configuration/dev-server/) <br />2. express-style middleware and many extension api.  | 1. [connect](https://github.com/senchalabs/connect) <br />2. connect middleware |
+|     Local devServer              | 1. [webpack dev-server](https://webpack.js.org/configuration/dev-server/) <br />2. express-style middleware and many extension api.  | 1. [connect](https://github.com/senchalabs/connect) <br />2. connect middleware |
+|     Type Checker                 | 1. [fork-ts-checker-webpack-plugin](https://github.com/TypeStrong/fork-ts-checker-webpack-plugin) | 1. No built-in, we can use [vite-plugin-checker(based on vetur and vue-tsc)](https://github.com/fi3ework/vite-plugin-checker) |
+|     Lint                         | 1. [@vue/cli-plugin-eslint](https://www.npmjs.com/package/@vue/cli-plugin-eslint) | 1. No built-in we can use [vite-plugin-eslint](https://github.com/gxmari007/vite-plugin-eslint),  |
+|     Jest                         | 1. [@vue/cli-plugin-jest](https://www.npmjs.com/package/@vue/cli-plugin-jest)  | 1. will have first-class jest support |
 
 
 ## Milestones
+- Done ✅ vs WIP ⬜️ vs ❌ Won't support
 - ✅ Plugin
     - ✅ we can do nothing but rewrite corresponding vite-plugin, most code and tools can be reused 
 - ✅ Environment Variables Compatibility
@@ -181,7 +185,16 @@ yarn vite // or npm run vite
     - ❌ require('xxx') or require('xxx').default, most of the case, it can be replaced by dynamicImport ( import('xxx') or import('xxx').then(module => module.default) )
     - ✅ import '~some-module/theme/index.css' syntax for Import CSS [supported by vite#2185](https://github.com/vitejs/vite/issues/2185#issuecomment-784637827))
     - ✅ require.context compatibility
-    - ✅ module.hot compatibility
+    - ✅ module.hot compatibilite
+- ✅ Type Checker
+    - ✅ [vite-plugin-checker & vite-plugin-checker-vls](https://github.com/fi3ework/vite-plugin-checker)
+- ✅ Lint
+    - ✅ [vite-plugin-eslint](https://github.com/gxmari007/vite-plugin-eslint)
+- ⬜️ Eject and Codemod
+    - ⬜️ eject vite.config.ts
+    - ⬜️ eject vite deps
+    - ⬜️ remove vue-cli and webpack deps
+    - ⬜️ codemod webpack special syntax to vite-specific( import.meta.{hot, env} )
 
 ## Examples
 - [simple vue-cli SPA project](https://github.com/IndexXuan/vue-cli-plugin-vite/tree/main/examples/my-mpa-ts-app)
@@ -209,14 +222,16 @@ you can clone/fork this repo, under examples/*
     - use [import.meta.xxx](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import.meta) not `module.xxx`
 
 ### Use vue-cli ecosystem
+- ~~first-class eslint/stylelint integration~~
 - first-class unit-test integration (by [@vue/cli-plugin-unit-jest](https://cli.vuejs.org/core-plugins/unit-jest.html))
 - first-class e2e integration (by [@vue/cli-plugin-cypress](https://cli.vuejs.org/core-plugins/e2e-cypress.html))
-- first-class eslint/stylelint integration
 - first-class xyz support by the [official](https://cli.vuejs.org/core-plugins/) and [community](https://www.npmjs.com/search?q=vue-cli-plugin-) plugins.
 
 
 ## Relevant Vite Plugins
 - [vite-plugin-vue2@underfin](https://github.com/underfin/vite-plugin-vue2) - Vue 2 support for vite.
+- [vite-plugin-checker@fi3ework](https://github.com/fi3ework/vite-plugin-checker) - Type checker for vite.
+- [vite-plugin-eslint@gxmari007](https://github.com/gxmari007/vite-plugin-eslint) - Eslint for vite.
 - [@vitejs/plugin-vue](https://github.com/vitejs/vite/tree/main/packages/plugin-vue) - Official Vue 3 plugin.
 - [@vitejs/plugin-vue-jsx](https://github.com/vitejs/vite/tree/main/packages/plugin-vue-jsx) - Official Vue 3 jsx plugin.
 - [vite-plugin-env-compatible](https://github.com/IndexXuan/vite-plugin-env-compatible) - Env compatibility for vite with vue-cli.
