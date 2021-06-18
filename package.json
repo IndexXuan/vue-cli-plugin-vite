@@ -39,7 +39,7 @@
     "vite-plugin-env-compatible": "1.0.0",
     "vite-plugin-html-template": "1.0.4",
     "vite-plugin-mpa": "1.0.3",
-    "vite-plugin-vue-cli": "1.0.3",
+    "vite-plugin-vue-cli": "1.0.4",
     "vite-plugin-vue2": "1.6.2",
     "cross-spawn": "7.0.3",
     "semver": "7.3.5",

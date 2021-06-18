@@ -17,6 +17,7 @@ const resolve = (p: string) => path.resolve(process.cwd(), p)
 // vue.config.js
 let vueConfig: VueCliOptions = {}
 try {
+  process.env.NODE_ENV = process.env.NODE_ENV || 'development'
   vueConfig = require(resolve('vue.config.js')) || {}
 } catch (e) {
   if (process.env.VITE_DEBUG) {
@@ -40,6 +41,24 @@ const extraPlugins = viteOptions.plugins || []
 const vitePluginVue2Options = viteOptions.vitePluginVue2Options || {}
 const vitePluginVue3Options = viteOptions.vitePluginVue3Options || {}
 const useMPA = Boolean(vueConfig.pages)
+const overlay = (() => {
+  if (typeof vueConfig === 'undefined') {
+    return true
+  }
+  if (typeof vueConfig.devServer === 'undefined') {
+    return true
+  }
+  if (typeof vueConfig.devServer.overlay === 'undefined') {
+    return true
+  }
+  if (typeof vueConfig.devServer.overlay === 'boolean') {
+    return vueConfig.devServer.overlay !== false
+  } else {
+    return (
+      vueConfig.devServer.overlay.warnings !== false || vueConfig.devServer.overlay.errors !== false
+    )
+  }
+})()
 
 /**
  * @see {@link https://vitejs.dev/config/}
@@ -67,10 +86,16 @@ export default defineConfig({
       ? undefined
       : Checker(
           vueVersion === 2
-            ? {
-                vls: VlsChecker(/** advanced VLS options */),
-              }
-            : { vueTsc: true },
+            ? /* temporarily disabled for production */ process.env.NODE_ENV !== 'production'
+              ? {
+                  overlay,
+                  vls: VlsChecker(/** advanced VLS options */),
+                }
+              : undefined
+            : {
+                overlay,
+                vueTsc: true,
+              },
         ),
     // vue-cli enable eslint-loader by lintOnSave.
     vueConfig.lintOnSave === false
