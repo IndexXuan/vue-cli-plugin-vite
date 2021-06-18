@@ -92,21 +92,25 @@ export default defineConfig({
                   vls: VlsChecker(/** advanced VLS options */),
                 }
               : undefined
-            : {
+            : /* temporarily disabled for production */ process.env.NODE_ENV !== 'production'
+            ? {
                 overlay,
                 vueTsc: true,
-              },
+              }
+            : undefined,
         ),
     // vue-cli enable eslint-loader by lintOnSave.
     vueConfig.lintOnSave === false
       ? undefined
-      : eslintPlugin({
+      : /* temporarily disabled for production */ process.env.NODE_ENV !== 'production'
+      ? eslintPlugin({
           /**
            * deal with some virtual module like react/refresh or windicss.
            * @see {@link https://github.com/gxmari007/vite-plugin-eslint/issues/1}
            */
           include: 'src/**/*.{vue,js,jsx,ts,tsx}',
-        }),
+        })
+      : undefined,
     ...extraPlugins,
   ],
   optimizeDeps: {
