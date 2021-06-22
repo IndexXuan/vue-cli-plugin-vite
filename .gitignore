@@ -9,7 +9,10 @@ yarn-error.log*
 
 dist
 package-lock.json
+pnpm-lock.yaml
 yarn.lock
+
+.eslintcache
 
 # Editor directories and files
 .idea

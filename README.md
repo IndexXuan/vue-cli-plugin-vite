@@ -1,6 +1,6 @@
 # Use Vite Today
 
-> out-of-box for vue-cli projects without any codebase modifications.
+> out-of-the-box for vue-cli projects without any codebase modifications.
 
 <p align="center">
   <img src="./logo.png" alt="logo" title="logo" width="300px" />

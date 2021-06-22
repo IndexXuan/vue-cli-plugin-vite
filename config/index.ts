@@ -13,11 +13,11 @@ import chalk from 'chalk'
 import type { Options } from './options'
 
 const resolve = (p: string) => path.resolve(process.cwd(), p)
+process.env.NODE_ENV = process.env.NODE_ENV || 'development'
 
 // vue.config.js
 let vueConfig: VueCliOptions = {}
 try {
-  process.env.NODE_ENV = process.env.NODE_ENV || 'development'
   vueConfig = require(resolve('vue.config.js')) || {}
 } catch (e) {
   if (process.env.VITE_DEBUG) {
@@ -86,13 +86,13 @@ export default defineConfig({
       ? undefined
       : Checker(
           vueVersion === 2
-            ? /* temporarily disabled for production */ process.env.NODE_ENV !== 'production'
+            ? /* temporarily enabled for development */ process.env.NODE_ENV === 'development'
               ? {
                   overlay,
                   vls: VlsChecker(/** advanced VLS options */),
                 }
               : undefined
-            : /* temporarily disabled for production */ process.env.NODE_ENV !== 'production'
+            : process.env.NODE_ENV === 'development'
             ? {
                 overlay,
                 vueTsc: true,
@@ -102,7 +102,7 @@ export default defineConfig({
     // vue-cli enable eslint-loader by lintOnSave.
     vueConfig.lintOnSave === false
       ? undefined
-      : /* temporarily disabled for production */ process.env.NODE_ENV !== 'production'
+      : /* temporarily enabled for development */ process.env.NODE_ENV === 'development'
       ? eslintPlugin({
           /**
            * deal with some virtual module like react/refresh or windicss.
