@@ -1,3 +1,13 @@
+<a name="1.2.3"></a>
+## [1.2.3](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v1.2.2...v1.2.3) (2021-06-22)
+
+
+### Features
+
+* enable checker & eslint when dev & update vue-cli plugin ([2df378a](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/2df378a))
+
+
+
 <a name="1.2.2"></a>
 ## [1.2.2](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v1.2.1...v1.2.2) (2021-06-18)
 
