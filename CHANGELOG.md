@@ -1,3 +1,13 @@
+<a name="1.2.4"></a>
+## [1.2.4](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v1.2.3...v1.2.4) (2021-06-24)
+
+
+### Bug Fixes
+
+* remove .eslintcache by update eslint-plugin & vue-cli plugin ([d6e97ca](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/d6e97ca))
+
+
+
 <a name="1.2.3"></a>
 ## [1.2.3](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v1.2.2...v1.2.3) (2021-06-22)
 
