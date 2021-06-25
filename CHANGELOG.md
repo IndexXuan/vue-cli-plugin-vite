@@ -1,3 +1,13 @@
+<a name="1.3.2"></a>
+## [1.3.2](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v1.3.1...v1.3.2) (2021-06-25)
+
+
+### Features
+
+* add switch for eslint & cssLoaderCompat ([df587b8](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/df587b8))
+
+
+
 <a name="1.3.1"></a>
 ## [1.3.1](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v1.3.0...v1.3.1) (2021-06-25)
 
