@@ -66,7 +66,7 @@ const overlay = (() => {
 export default defineConfig({
   plugins: [
     envCompatible(),
-    cssLoaderCompat(),
+    viteOptions.cssLoaderCompat !== false ? cssLoaderCompat() : undefined,
     vueCli(),
     // lazyload plugin for vue-template-compiler mismatch errors.
     vueVersion === 2
@@ -101,7 +101,7 @@ export default defineConfig({
             : undefined,
         ),
     // vue-cli enable eslint-loader by lintOnSave.
-    vueConfig.lintOnSave === false
+    viteOptions.disabledLint
       ? undefined
       : /* temporarily enabled for development */ process.env.NODE_ENV === 'development'
       ? eslintPlugin({
