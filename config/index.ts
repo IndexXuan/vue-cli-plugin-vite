@@ -2,7 +2,7 @@ import { defineConfig } from 'vite'
 import semver from 'semver'
 import envCompatible from 'vite-plugin-env-compatible'
 import htmlTemplate from 'vite-plugin-html-template'
-import vueCli from 'vite-plugin-vue-cli'
+import vueCli, { cssLoaderCompat } from 'vite-plugin-vue-cli'
 import type { VueCliOptions } from 'vite-plugin-vue-cli'
 import mpa from 'vite-plugin-mpa'
 import Checker from 'vite-plugin-checker'
@@ -66,6 +66,7 @@ const overlay = (() => {
 export default defineConfig({
   plugins: [
     envCompatible(),
+    cssLoaderCompat(),
     vueCli(),
     // lazyload plugin for vue-template-compiler mismatch errors.
     vueVersion === 2
