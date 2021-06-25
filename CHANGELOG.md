@@ -1,3 +1,13 @@
+<a name="1.2.5"></a>
+## [1.2.5](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v1.2.4...v1.2.5) (2021-06-25)
+
+
+### Bug Fixes
+
+* fix alias issue in css url(close [#33](https://github.com/IndexXuan/vue-cli-plugin-vite/issues/33)) ([8b32551](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/8b32551))
+
+
+
 <a name="1.2.4"></a>
 ## [1.2.4](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v1.2.3...v1.2.4) (2021-06-24)
 
