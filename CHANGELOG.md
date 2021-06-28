@@ -1,3 +1,13 @@
+<a name="1.3.3"></a>
+## [1.3.3](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v1.3.2...v1.3.3) (2021-06-28)
+
+
+### Bug Fixes
+
+* fix vue & VTC version mismatch issue & update deps ([65b91c5](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/65b91c5))
+
+
+
 <a name="1.3.2"></a>
 ## [1.3.2](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v1.3.1...v1.3.2) (2021-06-25)
 
