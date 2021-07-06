@@ -1,3 +1,13 @@
+<a name="1.3.4"></a>
+## [1.3.4](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v1.3.3...v1.3.4) (2021-07-06)
+
+
+### Features
+
+* **checker:** update deps of vite and vite-plugin-checker ([b47f5e1](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/b47f5e1))
+
+
+
 <a name="1.3.3"></a>
 ## [1.3.3](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v1.3.2...v1.3.3) (2021-06-28)
 
