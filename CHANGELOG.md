@@ -1,3 +1,13 @@
+<a name="1.3.5"></a>
+## [1.3.5](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v1.3.4...v1.3.5) (2021-07-06)
+
+
+### Bug Fixes
+
+* **checker:** fix vls-checker log format ([1175480](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/1175480))
+
+
+
 <a name="1.3.4"></a>
 ## [1.3.4](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v1.3.3...v1.3.4) (2021-07-06)
 
