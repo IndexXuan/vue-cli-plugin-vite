@@ -34,7 +34,7 @@
     "@vitejs/plugin-vue-jsx": "1.1.6",
     "vite": "2.4.0",
     "vite-plugin-checker": "0.2.0",
-    "vite-plugin-checker-vls": "0.2.0",
+    "vite-plugin-checker-vls": "0.2.1",
     "vite-plugin-eslint": "1.3.0",
     "vite-plugin-env-compatible": "1.0.0",
     "vite-plugin-html-template": "1.0.4",
