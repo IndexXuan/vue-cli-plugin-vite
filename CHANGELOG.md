@@ -4,6 +4,18 @@
 
 ### Bug Fixes
 
+* fix assets public token handler ([f9b3e96](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/f9b3e96))
+* fix url with public folder ([5c7ea2d](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/5c7ea2d))
+* replace vite-plugin-vue2 to vite-plugin-vue2-plus ([5da6b88](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/5da6b88))
+
+
+
+<a name="1.4.1"></a>
+## [1.4.1](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v1.4.0...v1.4.1) (2021-08-09)
+
+
+### Bug Fixes
+
 * fix url with public folder ([5c7ea2d](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/5c7ea2d))
 * replace vite-plugin-vue2 to vite-plugin-vue2-plus ([5da6b88](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/5da6b88))
 
