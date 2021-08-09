@@ -1,3 +1,13 @@
+<a name="1.4.0"></a>
+# [1.4.0](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v1.3.5...v1.4.0) (2021-08-09)
+
+
+### Features
+
+* support dynamic injected env & improve css-loader compat & assets without protocol like http/https ([ca0daa1](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/ca0daa1))
+
+
+
 <a name="1.3.6"></a>
 ## [1.3.6](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v1.3.5...v1.3.6) (2021-08-09)
 
