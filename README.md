@@ -116,6 +116,11 @@ yarn vite // or npm run vite
        * @default {}
        */
       optimizeDeps: {}
+      /**
+       * disabled type-checker, recommended old project disabled it.
+       * @default false
+       */
+      disabledTypeChecker: false,
     }
   },
 }
@@ -155,7 +160,7 @@ yarn vite // or npm run vite
     - ✅ we can do nothing but rewrite corresponding vite-plugin, most code and tools can be reused 
 - ✅ Environment Variables Compatibility
     - ✅ load to process.env.XXX (all env with or without prefix will be loaded)
-    - ✅ recognize `VUE_APP_` prefix (you can use other instead by config, e.g. `REACT_APP_`)
+    - ✅ recognize `VUE_APP_` prefix
     - ✅ define as `process.env.${PREFIX}_XXX` for client-side
 - ✅ Entry Files (we can do nothing)
 - ✅ Config File (vue.config.js Options auto-resolved)
@@ -184,6 +189,8 @@ yarn vite // or npm run vite
 - ✅ Special Synatax
     - ❌ require('xxx') or require('xxx').default, most of the case, it can be replaced by dynamicImport ( import('xxx') or import('xxx').then(module => module.default) )
     - ✅ import '~some-module/theme/index.css' syntax for Import CSS [supported by vite#2185](https://github.com/vitejs/vite/issues/2185#issuecomment-784637827))
+    - ✅ import '~@some-module/theme/index.css' syntax for Import CSS [supported by vite#2185](https://github.com/vitejs/vite/issues/2185#issuecomment-784637827))
+    - ✅ ~public & ~/public support
     - ✅ require.context compatibility
     - ✅ module.hot compatibilite
 - ✅ Type Checker
@@ -234,8 +241,8 @@ you can clone/fork this repo, under examples/*
 - [vite-plugin-eslint@gxmari007](https://github.com/gxmari007/vite-plugin-eslint) - Eslint for vite.
 - [@vitejs/plugin-vue](https://github.com/vitejs/vite/tree/main/packages/plugin-vue) - Official Vue 3 plugin.
 - [@vitejs/plugin-vue-jsx](https://github.com/vitejs/vite/tree/main/packages/plugin-vue-jsx) - Official Vue 3 jsx plugin.
-- [vite-plugin-env-compatible](https://github.com/IndexXuan/vite-plugin-env-compatible) - Env compatibility for vite with vue-cli.
-- [vite-plugin-html-template](https://github.com/IndexXuan/vite-plugin-html-template) - Like html-webpack-plugin for webpack.
-- [vite-plugin-vue-cli](https://github.com/IndexXuan/vite-plugin-vue-cli) - Infer vite config from vue.config.js.
-- [vite-plugin-mpa](https://github.com/IndexXuan/vite-plugin-mpa) - MPA support for vite.
+- [vite-plugin-env-compatible@IndexXuan](https://github.com/IndexXuan/vite-plugin-env-compatible) - Env compatibility for vite with vue-cli.
+- [vite-plugin-html-template@IndexXuan](https://github.com/IndexXuan/vite-plugin-html-template) - Like html-webpack-plugin for webpack.
+- [vite-plugin-vue-cli@IndexXuan](https://github.com/IndexXuan/vite-plugin-vue-cli) - Infer vite config from vue.config.js.
+- [vite-plugin-mpa@IndexXuan](https://github.com/IndexXuan/vite-plugin-mpa) - MPA support for vite.
 

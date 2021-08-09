@@ -1,3 +1,8 @@
+<a name="1.3.6"></a>
+## [1.3.6](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v1.3.5...v1.3.6) (2021-08-09)
+
+
+
 <a name="1.3.5"></a>
 ## [1.3.5](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v1.3.4...v1.3.5) (2021-07-06)
 
