@@ -70,7 +70,7 @@ export default defineConfig({
     vueCli(),
     // lazyload plugin for vue-template-compiler mismatch errors.
     vueVersion === 2
-      ? require('vite-plugin-vue2-plus')['createVuePlugin'](vitePluginVue2Options)
+      ? require('vite-plugin-vue2')['createVuePlugin'](vitePluginVue2Options)
       : [
           require('@vitejs/plugin-vue')(),
           vitePluginVue3Options.jsx
