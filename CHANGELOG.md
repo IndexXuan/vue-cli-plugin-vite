@@ -1,4 +1,43 @@
 <a name="1.4.1"></a>
+## [1.4.1](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v1.0.0-rc.6...v1.4.1) (2021-08-20)
+
+
+### Bug Fixes
+
+* fix alias issue in css url(close [#33](https://github.com/IndexXuan/vue-cli-plugin-vite/issues/33)) ([16cb551](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/16cb551))
+* fix assets public token handler ([f9b3e96](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/f9b3e96))
+* fix history mode SPA fallback(html template) ([a7d1a28](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/a7d1a28))
+* fix host default value ([c142669](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/c142669))
+* fix MPA entry file injection ([71418c9](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/71418c9))
+* fix url with ~ and alias again ([729a3e1](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/729a3e1))
+* fix url with public folder ([5c7ea2d](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/5c7ea2d))
+* fix vite auto pre-bundle deps ([1f20002](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/1f20002))
+* replace vite-plugin-vue2 to vite-plugin-vue2-plus ([5da6b88](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/5da6b88))
+* **checker:** fix vls-checker log format ([1175480](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/1175480))
+* fix vue & VTC version mismatch issue & update deps ([65b91c5](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/65b91c5))
+* fix Vue3 dev start(closed [#27](https://github.com/IndexXuan/vue-cli-plugin-vite/issues/27)) ([af2b4b1](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/af2b4b1))
+* remove .eslintcache by update eslint-plugin & vue-cli plugin ([d6e97ca](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/d6e97ca))
+* type checker and eslint only for serve ([d1c5319](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/d1c5319))
+
+
+### Features
+
+* support dynamic injected env & improve css-loader compat & assets without protocol like http/https ([ca0daa1](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/ca0daa1))
+* **checker:** update deps of vite and vite-plugin-checker ([b47f5e1](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/b47f5e1))
+* add switch for eslint & cssLoaderCompat ([df587b8](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/df587b8))
+* add vite-plugin-checker & vite-plugin-eslint ([6ead769](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/6ead769))
+* disabled html-template if needed ([b6e04e7](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/b6e04e7))
+* enable checker & eslint when dev & update vue-cli plugin ([2df378a](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/2df378a))
+* optimize for vue.config.js#pages ([c508c98](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/c508c98))
+* remove pluginOptions#vite.alias ([c4b7ca8](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/c4b7ca8))
+* support checker plugin overlay & NODE_ENV default to development ([77cd456](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/77cd456))
+* update deps for vite-plugin-vue2 & mpa ([790f965](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/790f965))
+* update deps, ready for v1.0.0 ([3b69722](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/3b69722))
+* update vite-plugin-vue-cli, check before parsing module keywords ([3653a95](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/3653a95))
+
+
+
+<a name="1.4.1"></a>
 ## [1.4.1](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v1.4.0...v1.4.1) (2021-08-09)
 
 

@@ -2,8 +2,15 @@
 
 const path = require('path')
 const spawn = require('cross-spawn')
+const yargs = require('yargs/yargs')
+
 const configPath = require.resolve('<%- pkgName %>/config/index.ts')
 const cwd = path.resolve(__dirname, '../')
+
+const { configFile = 'vue.config.js' } = yargs(process.argv).argv || {}
+
+// Set the framework config file used by the project
+process.env.FRAMEWORK_CLI_CONFIG_FILE = configFile
 
 const params = [
   `${process.env.BUILD ? 'build' : ''}`,
