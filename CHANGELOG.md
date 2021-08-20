@@ -1,3 +1,14 @@
+<a name="1.4.2"></a>
+## [1.4.2](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v1.4.1...v1.4.2) (2021-08-20)
+
+
+### Features
+
+* **deps:** update deps & update vue-cli for custom config file ([7a604e1](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/7a604e1))
+* **generator:** add process.env.CLI_CONFIG_FILE ([2615a25](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/2615a25))
+
+
+
 <a name="1.4.1"></a>
 ## [1.4.1](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v1.4.0...v1.4.1) (2021-08-09)
 
