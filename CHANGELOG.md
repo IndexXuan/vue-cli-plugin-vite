@@ -4,8 +4,8 @@
 
 ### Features
 
-* **deps:** update deps & update vue-cli for custom config file ([7a604e1](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/7a604e1))
-* **generator:** add process.env.CLI_CONFIG_FILE ([2615a25](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/2615a25))
+* **deps:** update vite deps & update vue-cli for custom config file ([7a604e1](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/7a604e1))
+* add `CLI_CONFIG_FILE` env variable ([2615a25](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/2615a25))
 
 
 
