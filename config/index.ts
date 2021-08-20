@@ -18,7 +18,7 @@ process.env.NODE_ENV = process.env.NODE_ENV || 'development'
 // vue.config.js
 let vueConfig: VueCliOptions = {}
 try {
-  vueConfig = require(resolve('vue.config.js')) || {}
+  vueConfig = require(resolve(process.env.CLI_CONFIG_FILE || 'vue.config.js')) || {}
 } catch (e) {
   if (process.env.VITE_DEBUG) {
     console.error(chalk.redBright(e))
