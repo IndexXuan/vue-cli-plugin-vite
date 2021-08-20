@@ -1,3 +1,13 @@
+<a name="1.4.3"></a>
+## [1.4.3](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v1.4.2...v1.4.3) (2021-08-20)
+
+
+### Bug Fixes
+
+* fix vue2 plugin name ([d7cb23a](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/d7cb23a))
+
+
+
 <a name="1.4.2"></a>
 ## [1.4.2](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v1.4.1...v1.4.2) (2021-08-20)
 
