@@ -30,7 +30,7 @@
     "lint-staged": "^9.5.0",
     "prettier": "^1.19.1",
     "typescript": "~3.9.3",
-    "vue-cli-plugin-vite": "1.4.2",
+    "vue-cli-plugin-vite": "1.4.3",
     "vue-template-compiler": "^2.6.11"
   },
   "eslintConfig": {
