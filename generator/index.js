@@ -4,7 +4,8 @@ module.exports = (api, options = {}) => {
   // 1. extend package
   const pkg = {
     scripts: {
-      vite: `node ./bin/vite --config-file=vue.config.js`,
+      // Set the framework cli config file used by the project
+      vite: `FRAMEWORK_CLI_CONFIG_FILE=vue.config.js node ./bin/vite`,
     },
   }
   api.extendPackage(pkg)

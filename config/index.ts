@@ -32,7 +32,9 @@ let vueVersion = 2
 try {
   const Vue = require('vue')
   vueVersion = semver.major(Vue.version)
-} catch (e) {}
+} catch (e) {
+  console.log(e)
+}
 
 const pluginOptions = vueConfig.pluginOptions || {}
 const viteOptions: Options = pluginOptions.vite || {}
