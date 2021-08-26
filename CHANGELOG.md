@@ -1,3 +1,13 @@
+<a name="1.4.4-beta.0"></a>
+## [1.4.4-beta.0](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v1.4.3...v1.4.4-beta.0) (2021-08-26)
+
+
+### Bug Fixes
+
+* improve css.loaderOptions handler and update checker plugin ([#44](https://github.com/IndexXuan/vue-cli-plugin-vite/issues/44)) ([4b1cf81](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/4b1cf81))
+
+
+
 <a name="1.4.3"></a>
 ## [1.4.3](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v1.4.2...v1.4.3) (2021-08-20)
 
