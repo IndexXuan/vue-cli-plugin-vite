@@ -1,5 +1,5 @@
-<a name="1.4.4-beta.0"></a>
-## [1.4.4-beta.0](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v1.4.3...v1.4.4-beta.0) (2021-08-26)
+<a name="1.4.4"></a>
+## [1.4.4](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v1.4.3...v1.4.4) (2021-08-26)
 
 
 ### Bug Fixes
