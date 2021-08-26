@@ -5,8 +5,7 @@ import htmlTemplate from 'vite-plugin-html-template'
 import vueCli, { cssLoaderCompat } from 'vite-plugin-vue-cli'
 import type { VueCliOptions } from 'vite-plugin-vue-cli'
 import mpa from 'vite-plugin-mpa'
-import Checker from 'vite-plugin-checker'
-import { VlsChecker } from 'vite-plugin-checker-vls'
+import checker from 'vite-plugin-checker'
 import eslintPlugin from 'vite-plugin-eslint'
 import path from 'path'
 import chalk from 'chalk'
@@ -83,22 +82,18 @@ export default defineConfig({
       ? undefined
       : htmlTemplate(vueConfig.pages ? { pages: vueConfig.pages } : undefined),
     // since vue-cli have type-checker by default(but use webpack plugin instead of vls).
-    viteOptions.disabledTypeChecker
+    viteOptions.disabledTypeChecker || process.env.NODE_ENV !== 'development'
       ? undefined
-      : Checker(
+      : checker(
           vueVersion === 2
-            ? /* temporarily enabled for development */ process.env.NODE_ENV === 'development'
-              ? {
-                  overlay,
-                  vls: VlsChecker(/** advanced VLS options */),
-                }
-              : undefined
-            : process.env.NODE_ENV === 'development'
             ? {
                 overlay,
-                vueTsc: true,
+                vls: true,
               }
-            : undefined,
+            : {
+                overlay,
+                vueTsc: true,
+              },
         ),
     // vue-cli enable eslint-loader by lintOnSave.
     viteOptions.disabledLint
