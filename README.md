@@ -97,34 +97,27 @@ yarn vite // or npm run vite
        */
       plugins: [], // other vite plugins list, will be merge into this plugin\'s underlying vite.config.ts
       /**
-       * you can enable jsx support by setting { jsx: true }
-       * @see {@link https://github.com/underfin/vite-plugin-vue2#options}
-       * @default {}
-       */
-      vitePluginVue2Options: {},
-      /**
-       * @vitejs/plugin-vue-jsx Options
-       * @see {@link https://github.com/vitejs/vite/tree/main/packages/plugin-vue-jsx#options}
-       * @default {}
-       */
-      vitePluginVue3Options: {
-        jsx?: {}
-      },
-      /**
        * Vite UserConfig.optimizeDeps options
-       * recommended set `include` for speedup page-loaded time
+       * recommended set `include` for speedup page-loaded time, e.g. include: ['vue', 'vue-router', '@scope/xxx']
        * @default {}
        */
-      optimizeDeps: {}
+      optimizeDeps: {},
       /**
-       * disabled type-checker, recommended old project disabled it.
+       * type-checker, recommended disabled for large-scale old project.
        * @default false
        */
-      disabledTypeChecker: false,
+      disabledTypeChecker: true,
+      /**
+       * lint code by eslint
+       * @default false
+       */
+      disabledLint: false,
     }
   },
 }
 ```
+
+- [see all](https://github.com/IndexXuan/vue-cli-plugin-vite/blob/main/config/options.ts)
 
 
 ## Underlying principle
