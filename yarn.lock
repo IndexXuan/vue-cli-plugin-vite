@@ -5866,10 +5866,10 @@ vite-plugin-mpa@1.0.3:
     shelljs "0.8.4"
     yargs "16.2.0"
 
-vite-plugin-vue-cli@1.3.7:
-  version "1.3.7"
-  resolved "https://registry.yarnpkg.com/vite-plugin-vue-cli/-/vite-plugin-vue-cli-1.3.7.tgz#fd4861b4faf5fec7e80ffbeab4023a9e16ac8055"
-  integrity sha512-bi3AarXEaJquekC8nM/ni/zHZIIv1awkQQqYhlj/Jd+LZnUZP4IisjSmwxZ5LDK/rF9Z+tYFgYTN6BSmjyXM2w==
+vite-plugin-vue-cli@1.3.8:
+  version "1.3.8"
+  resolved "https://registry.yarnpkg.com/vite-plugin-vue-cli/-/vite-plugin-vue-cli-1.3.8.tgz#60ff1608fb573ad6b15b4d4fd03cdf8370982d9c"
+  integrity sha512-+y1dzdC8YWBchQaajcmaEfNbjo8SVb3vbSuAE1k09c0M8uUkNY5K81OKJ0smnYqjbgPdZpm9zqMsfs2rRZwzOQ==
   dependencies:
     "@babel/core" "^7.12.10"
     "@babel/plugin-transform-typescript" "^7.12.1"

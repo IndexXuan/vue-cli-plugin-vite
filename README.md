@@ -2,6 +2,8 @@
 
 > out-of-the-box for vue-cli projects without any codebase modifications.
 
+<a href="https://github.com/IndexXuan/vue2-final-boilerplate" target="_blank" rel="noreferer nofollow">demo/boilerplate</a>
+
 <p align="center">
   <img src="./logo.png" alt="logo" title="logo" width="300px" />
 </p>
