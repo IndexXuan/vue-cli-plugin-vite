@@ -1,3 +1,13 @@
+<a name="1.4.5"></a>
+## [1.4.5](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v1.4.4...v1.4.5) (2021-08-29)
+
+
+### Bug Fixes
+
+* **build:** fix sourcemap warning by update vite-plugin-vue-cli ([65554e3](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/65554e3))
+
+
+
 <a name="1.4.4"></a>
 ## [1.4.4](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v1.4.3...v1.4.4) (2021-08-26)
 
