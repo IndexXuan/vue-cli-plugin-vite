@@ -1,3 +1,13 @@
+<a name="1.4.6"></a>
+## [1.4.6](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v1.4.5...v1.4.6) (2021-08-31)
+
+
+### Features
+
+* **config:** add resolve.extensions support ([cd14b61](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/cd14b61))
+
+
+
 <a name="1.4.5"></a>
 ## [1.4.5](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v1.4.4...v1.4.5) (2021-08-29)
 
