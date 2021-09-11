@@ -17,9 +17,13 @@ process.env.NODE_ENV = process.env.NODE_ENV || 'development'
 // vue.config.js
 let vueConfig: VueCliOptions = {}
 try {
-  vueConfig = require(resolve(process.env.CLI_CONFIG_FILE || 'vue.config.js')) || {}
+  /**
+   * @see {@link https://github.com/vuejs/vue-cli/commit/f5b174ff7981a8e882c1275dda65964b3f3d666c}
+   */
+  const maybeFn = require(resolve(process.env.CLI_CONFIG_FILE || 'vue.config.js'))
+  vueConfig = typeof maybeFn === 'function' ? maybeFn() : maybeFn
 } catch (e) {
-  // handle no vue.config.js
+  vueConfig = {}
   if (e.code === 'MODULE_NOT_FOUND') {
     if (process.env.VITE_DEBUG) {
       console.error(chalk.redBright(e))
@@ -27,6 +31,9 @@ try {
   } else {
     console.error(chalk.redBright(e.stack ?? e))
   }
+}
+if (process.env.VITE_DEBUG) {
+  console.log(vueConfig)
 }
 
 /**
