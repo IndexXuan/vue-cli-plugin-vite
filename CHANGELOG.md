@@ -1,3 +1,13 @@
+<a name="1.4.7"></a>
+## [1.4.7](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v1.4.6...v1.4.7) (2021-09-11)
+
+
+### Features
+
+* **config:** detect vue.config.js call error ([#38](https://github.com/IndexXuan/vue-cli-plugin-vite/issues/38)) ([41a0e62](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/41a0e62))
+
+
+
 <a name="1.4.6"></a>
 ## [1.4.6](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v1.4.5...v1.4.6) (2021-08-31)
 
