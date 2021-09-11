@@ -219,9 +219,9 @@ you can clone/fork this repo, under examples/*
 
 ### Lint the codebase
 - lint dependencies, which is incorrectly use [main/module/exports](https://twitter.com/patak_js/status/1363514285180268550?s=21) field in package.json
-- lint codebase, which is more esmodule compatible
+- lint codebase, which is more es-module compatible
     - use [import('xxx')](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import#dynamic_imports) not `require('xxx')`
-    - use [import.meta.xxx](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import.meta) not `module.xxx`
+    - ~~use [import.meta.xxx](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import.meta) not `module.xxx`~~
 
 ### Use vue-cli ecosystem
 - first-class eslint/stylelint integration
@@ -232,12 +232,12 @@ you can clone/fork this repo, under examples/*
 
 ## Relevant Vite Plugins
 - [vite-plugin-vue2@underfin](https://github.com/underfin/vite-plugin-vue2) - Vue 2 support for vite.
-- [vite-plugin-checker@fi3ework](https://github.com/fi3ework/vite-plugin-checker) - Type checker for vite.
-- [vite-plugin-eslint@gxmari007](https://github.com/gxmari007/vite-plugin-eslint) - Eslint for vite.
 - [@vitejs/plugin-vue](https://github.com/vitejs/vite/tree/main/packages/plugin-vue) - Official Vue 3 plugin.
 - [@vitejs/plugin-vue-jsx](https://github.com/vitejs/vite/tree/main/packages/plugin-vue-jsx) - Official Vue 3 jsx plugin.
-- [vite-plugin-env-compatible@IndexXuan](https://github.com/IndexXuan/vite-plugin-env-compatible) - Env compatibility for vite with vue-cli.
-- [vite-plugin-html-template@IndexXuan](https://github.com/IndexXuan/vite-plugin-html-template) - Like html-webpack-plugin for webpack.
 - [vite-plugin-vue-cli@IndexXuan](https://github.com/IndexXuan/vite-plugin-vue-cli) - Infer vite config from vue.config.js.
+- [vite-plugin-html-template@IndexXuan](https://github.com/IndexXuan/vite-plugin-html-template) - Like html-webpack-plugin for webpack.
 - [vite-plugin-mpa@IndexXuan](https://github.com/IndexXuan/vite-plugin-mpa) - MPA support for vite.
+- [vite-plugin-checker@fi3ework](https://github.com/fi3ework/vite-plugin-checker) - Type checker for vite.
+- [vite-plugin-eslint@gxmari007](https://github.com/gxmari007/vite-plugin-eslint) - Eslint for vite.
+- [vite-plugin-env-compatible@IndexXuan](https://github.com/IndexXuan/vite-plugin-env-compatible) - Env compatibility for vite with vue-cli.
 
