@@ -19,8 +19,13 @@ let vueConfig: VueCliOptions = {}
 try {
   vueConfig = require(resolve(process.env.CLI_CONFIG_FILE || 'vue.config.js')) || {}
 } catch (e) {
-  if (process.env.VITE_DEBUG) {
-    console.error(chalk.redBright(e))
+  // handle no vue.config.js
+  if (e.code === 'MODULE_NOT_FOUND') {
+    if (process.env.VITE_DEBUG) {
+      console.error(chalk.redBright(e))
+    }
+  } else {
+    console.error(chalk.redBright(e.stack ?? e))
   }
 }
 
