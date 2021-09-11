@@ -1,3 +1,13 @@
+<a name="1.4.8"></a>
+## [1.4.8](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v1.4.7...v1.4.8) (2021-09-11)
+
+
+### Features
+
+* **config:** support config file return function ([b3ef3f4](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/b3ef3f4))
+
+
+
 <a name="1.4.7"></a>
 ## [1.4.7](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v1.4.6...v1.4.7) (2021-09-11)
 
