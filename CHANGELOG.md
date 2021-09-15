@@ -1,3 +1,13 @@
+<a name="1.4.9"></a>
+## [1.4.9](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v1.4.8...v1.4.9) (2021-09-15)
+
+
+### Features
+
+* support unplugin-icons by hack alias (close [#49](https://github.com/IndexXuan/vue-cli-plugin-vite/issues/49)) ([38ab652](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/38ab652))
+
+
+
 <a name="1.4.8"></a>
 ## [1.4.8](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v1.4.7...v1.4.8) (2021-09-11)
 
