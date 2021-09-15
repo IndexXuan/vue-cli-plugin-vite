@@ -5,7 +5,7 @@ module.exports = () => {
       overlay: false,
     },
     configureWebpack: {
-      plugins: [require('unplugin-icons/webpack')({ compiler: 'vue2' })],
+      // plugins: [require('unplugin-icons/webpack')({ compiler: 'vue2' })],
     },
     pluginOptions: {
       vite: {

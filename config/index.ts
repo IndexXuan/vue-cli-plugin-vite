@@ -29,7 +29,7 @@ try {
       console.error(chalk.redBright(e))
     }
   } else {
-    console.error(chalk.redBright(e.stack ?? e))
+    console.error(chalk.redBright(e.stack ? e.stack : e))
   }
 }
 if (process.env.VITE_DEBUG) {
