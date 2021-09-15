@@ -1,3 +1,23 @@
+<a name="1.4.10"></a>
+## [1.4.10](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v1.4.9...v1.4.10) (2021-09-15)
+
+
+### Bug Fixes
+
+* dont use Nullish Coalescing Operator for old version nodejs ([40ada1c](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/40ada1c))
+
+
+
+<a name="1.4.10"></a>
+## [1.4.10](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v1.4.9...v1.4.10) (2021-09-15)
+
+
+### Bug Fixes
+
+* dont use Nullish Coalescing Operator for old version nodejs ([40ada1c](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/40ada1c))
+
+
+
 <a name="1.4.9"></a>
 ## [1.4.9](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v1.4.8...v1.4.9) (2021-09-15)
 

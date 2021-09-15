@@ -9,9 +9,9 @@
   "scripts": {
     "commit": "git cz",
     "build": "echo build success",
-    "test:spa-js": "cd ./examples/my-spa-js-app && yarn install --frozen-lockfile && yarn vite:build && yarn build",
-    "test:mpa-ts": "cd ./examples/my-mpa-ts-app && yarn install --frozen-lockfile && yarn vite:build && yarn build",
-    "test:vue3-ts": "cd ./examples/my-vue3-ts-app && yarn install --frozen-lockfile && yarn vite:build && yarn build",
+    "test:spa-js": "cd ./examples/my-spa-js-app && yarn && yarn vite:build && yarn build",
+    "test:mpa-ts": "cd ./examples/my-mpa-ts-app && yarn && yarn vite:build && yarn build",
+    "test:vue3-ts": "cd ./examples/my-vue3-ts-app && yarn && yarn vite:build && yarn build",
     "test": "yarn test:spa-js && yarn test:mpa-ts && yarn test:vue3-ts",
     "toc": "npx markdown-toc -i --bullets=- README.md",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"
