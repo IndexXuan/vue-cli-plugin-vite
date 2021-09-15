@@ -5,6 +5,8 @@
 ### Features
 
 * support unplugin-icons by hack alias (close [#49](https://github.com/IndexXuan/vue-cli-plugin-vite/issues/49)) ([38ab652](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/38ab652))
+* see [vite-plugin-vue-cli L133](https://github.com/IndexXuan/vite-plugin-vue-cli/blob/main/src/index.ts#L133)
+* update [vite-plugin-mpa](https://github.com/IndexXuan/vite-plugin-mpa/pull/12), support nested pages
 
 
 
