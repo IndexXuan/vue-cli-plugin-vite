@@ -10,7 +10,7 @@ module.exports = () => {
     pluginOptions: {
       vite: {
         disabledTypeChecker: true,
-        plugins: [require('unplugin-icons/vite')({ compiler: 'vue2' })],
+        // plugins: [require('unplugin-icons/vite')({ compiler: 'vue2' })],
       },
     },
   }

@@ -2,19 +2,19 @@
   <div id="app">
     <img alt="Vue logo" src="~@/assets/logo.png" />
     <HelloWorld msg="Welcome to Your Vue.js App" />
-    <icon-search />
+    <!-- <icon-search /> -->
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
-import IconSearch from '~icons/feather/search'
+// import IconSearch from '~icons/feather/search'
 
 export default {
   name: 'App',
   components: {
     HelloWorld,
-    IconSearch,
+    // IconSearch,
   },
 }
 </script>
