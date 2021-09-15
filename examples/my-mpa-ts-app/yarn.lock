@@ -1298,10 +1298,10 @@
     semver "^7.3.2"
     tsutils "^3.17.1"
 
-"@vitejs/plugin-vue-jsx@1.1.7":
-  version "1.1.7"
-  resolved "https://registry.yarnpkg.com/@vitejs/plugin-vue-jsx/-/plugin-vue-jsx-1.1.7.tgz#3e0236a01d6b5f8010bd6bc5ffccdbe1f0fa50d5"
-  integrity sha512-lomCrTZ/LXUk8L+1fBX4dpW+L/S7qY4+pzS5BRG2NuLpjo26Efh4yb8nDkYM7b8COS3ea7otis0SsqD8vGOSlg==
+"@vitejs/plugin-vue-jsx@1.1.8":
+  version "1.1.8"
+  resolved "https://registry.nlark.com/@vitejs/plugin-vue-jsx/download/@vitejs/plugin-vue-jsx-1.1.8.tgz#c7b9efd94efe8801635f755b6fd0d0a3a70cf596"
+  integrity sha1-x7nv2U7+iAFjX3Vbb9DQo6cM9ZY=
   dependencies:
     "@babel/core" "^7.14.8"
     "@babel/plugin-syntax-import-meta" "^7.10.4"
@@ -1310,10 +1310,10 @@
     "@vue/babel-plugin-jsx" "^1.0.6"
     hash-sum "^2.0.0"
 
-"@vitejs/plugin-vue@1.6.0":
-  version "1.6.0"
-  resolved "https://registry.yarnpkg.com/@vitejs/plugin-vue/-/plugin-vue-1.6.0.tgz#e5558e20c20e9098cd5bd65b9901fdcd2c354983"
-  integrity sha512-n3i8htn8pTg9M+kM3cnEfsPZx/6ngInlTroth6fA1LQTJq5aTVQ8ggaE5pPoAy9vCgHPtcaXMzwpldhqRAkebQ==
+"@vitejs/plugin-vue@1.6.2":
+  version "1.6.2"
+  resolved "https://registry.nlark.com/@vitejs/plugin-vue/download/@vitejs/plugin-vue-1.6.2.tgz#40dfe314cff610d4dd027a0b4ea2a93a257f3fc9"
+  integrity sha1-QN/jFM/2ENTdAnoLTqKpOiV/P8k=
 
 "@vue/babel-helper-vue-jsx-merge-props@^1.2.1":
   version "1.2.1"
@@ -9828,10 +9828,10 @@ vite-plugin-checker@0.3.4:
     vscode-languageserver-textdocument "^1.0.1"
     vscode-uri "^3.0.2"
 
-vite-plugin-env-compatible@1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/vite-plugin-env-compatible/-/vite-plugin-env-compatible-1.1.0.tgz#04531f598ffe22c71f114d4e194bf7309a3a5255"
-  integrity sha512-/FUfi6RA28+9TI6NKaO8p4AWSOytBYjWoFevNTaW6bOcqNPHCn2zDZ5ksstDQIyLS4TT9Fv4MqH2+8afngJbNw==
+vite-plugin-env-compatible@1.1.1:
+  version "1.1.1"
+  resolved "https://registry.nlark.com/vite-plugin-env-compatible/download/vite-plugin-env-compatible-1.1.1.tgz#2e11b059a5f3e8fc609d6a4bba84ca497081ee20"
+  integrity sha1-LhGwWaXz6PxgnWpLuoTKSXCB7iA=
 
 vite-plugin-eslint@1.3.0:
   version "1.3.0"
@@ -9849,19 +9849,19 @@ vite-plugin-html-template@1.0.4:
   dependencies:
     shelljs "0.8.4"
 
-vite-plugin-mpa@1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/vite-plugin-mpa/-/vite-plugin-mpa-1.0.3.tgz#1c6ee5a8e8f5ace32e60827433fc73b56d705724"
-  integrity sha512-qNA0koRvn+iR1KUUjbWS1GRPXqhPCx17hdkpJ3VxdbjjnZcmhtMce/oN/6ww9g7fSN4McdNUO5r8Hsy9axu8kA==
+vite-plugin-mpa@1.1.0:
+  version "1.1.0"
+  resolved "https://registry.nlark.com/vite-plugin-mpa/download/vite-plugin-mpa-1.1.0.tgz#7da9a243f90ae7fe88e5a63a8e993eaa94616461"
+  integrity sha1-famiQ/kK5/6I5aY6jpk+qpRhZGE=
   dependencies:
     connect-history-api-fallback "1.6.0"
     shelljs "0.8.4"
     yargs "16.2.0"
 
-vite-plugin-vue-cli@1.3.7:
-  version "1.3.7"
-  resolved "https://registry.yarnpkg.com/vite-plugin-vue-cli/-/vite-plugin-vue-cli-1.3.7.tgz#fd4861b4faf5fec7e80ffbeab4023a9e16ac8055"
-  integrity sha512-bi3AarXEaJquekC8nM/ni/zHZIIv1awkQQqYhlj/Jd+LZnUZP4IisjSmwxZ5LDK/rF9Z+tYFgYTN6BSmjyXM2w==
+vite-plugin-vue-cli@1.4.0:
+  version "1.4.0"
+  resolved "https://registry.nlark.com/vite-plugin-vue-cli/download/vite-plugin-vue-cli-1.4.0.tgz#f7d5c344532b94b412a3b79b7055067da152d59a"
+  integrity sha1-99XDRFMrlLQSo7ebcFUGfaFS1Zo=
   dependencies:
     "@babel/core" "^7.12.10"
     "@babel/plugin-transform-typescript" "^7.12.1"
@@ -9899,10 +9899,10 @@ vite-plugin-vue2@1.8.1:
     source-map "^0.7.3"
     vue-template-es2015-compiler "^1.9.1"
 
-vite@2.5.1:
-  version "2.5.1"
-  resolved "https://registry.yarnpkg.com/vite/-/vite-2.5.1.tgz#953c71a034c07b3ae0448d57664ec9c6862f23a8"
-  integrity sha512-FwmLbbz8MB1pBs9dKoRDgpiqoijif8hSK1+NNUYc12/cnf+pM2UFhhQ1rcpXgbMhm/5c2USZdVAf0FSkSxaFDA==
+vite@2.5.7:
+  version "2.5.7"
+  resolved "https://registry.nlark.com/vite/download/vite-2.5.7.tgz#e495be9d8bcbf9d30c7141efdccacde746ee0125"
+  integrity sha1-5JW+nYvL+dMMcUHv3MrN50buASU=
   dependencies:
     esbuild "^0.12.17"
     postcss "^8.3.6"
@@ -9971,24 +9971,24 @@ vscode-uri@^3.0.2:
   resolved "https://registry.yarnpkg.com/vscode-uri/-/vscode-uri-3.0.2.tgz#ecfd1d066cb8ef4c3a208decdbab9a8c23d055d0"
   integrity sha512-jkjy6pjU1fxUvI51P+gCsxg1u2n8LSt0W6KrCNQceaziKzff74GoWmjVG46KieVzybO1sttPQmYfrwSHey7GUA==
 
-vue-cli-plugin-vite@1.4.4:
-  version "1.4.4"
-  resolved "https://registry.yarnpkg.com/vue-cli-plugin-vite/-/vue-cli-plugin-vite-1.4.4.tgz#3bdab5fbff1c249134ffac13d653e2b7c0827e1f"
-  integrity sha512-/LZq+zb82TYoqW2NiJEBQBQKBxLvNr62cWZMVRZw7OtGVu6LLx0B3pYi91DFRlttYHQJFhP76GBPpFak4Ii3Zg==
+vue-cli-plugin-vite@1.4.9:
+  version "1.4.9"
+  resolved "https://registry.nlark.com/vue-cli-plugin-vite/download/vue-cli-plugin-vite-1.4.9.tgz#15df90639e26c7c0bb2da2287ff1a0c7edee256b"
+  integrity sha1-Fd+QY54mx8C7LaIof/Ggx+3uJWs=
   dependencies:
     "@types/semver" "7.3.4"
-    "@vitejs/plugin-vue" "1.6.0"
-    "@vitejs/plugin-vue-jsx" "1.1.7"
+    "@vitejs/plugin-vue" "1.6.2"
+    "@vitejs/plugin-vue-jsx" "1.1.8"
     chalk "4.1.0"
     cross-spawn "7.0.3"
     semver "7.3.5"
-    vite "2.5.1"
+    vite "2.5.7"
     vite-plugin-checker "0.3.4"
-    vite-plugin-env-compatible "1.1.0"
+    vite-plugin-env-compatible "1.1.1"
     vite-plugin-eslint "1.3.0"
     vite-plugin-html-template "1.0.4"
-    vite-plugin-mpa "1.0.3"
-    vite-plugin-vue-cli "1.3.7"
+    vite-plugin-mpa "1.1.0"
+    vite-plugin-vue-cli "1.4.0"
     vite-plugin-vue2 "1.8.1"
     vls "0.7.4"
 

@@ -1,18 +1,21 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="~@/assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <img alt="Vue logo" src="~@/assets/logo.png" />
+    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <icon-search />
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import IconSearch from '~icons/feather/search'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    HelloWorld,
+    IconSearch,
+  },
 }
 </script>
 
