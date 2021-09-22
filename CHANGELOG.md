@@ -1,3 +1,13 @@
+<a name="1.4.11"></a>
+## [1.4.11](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v1.4.10...v1.4.11) (2021-09-22)
+
+
+### Bug Fixes
+
+* fix require.context on lazy mode ([#51](https://github.com/IndexXuan/vue-cli-plugin-vite/issues/51)) ([2f9f0d3](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/2f9f0d3))
+
+
+
 <a name="1.4.10"></a>
 ## [1.4.10](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v1.4.9...v1.4.10) (2021-09-15)
 
