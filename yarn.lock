@@ -5866,10 +5866,10 @@ vite-plugin-mpa@1.1.0:
     shelljs "0.8.4"
     yargs "16.2.0"
 
-vite-plugin-vue-cli@1.4.0:
-  version "1.4.0"
-  resolved "https://registry.nlark.com/vite-plugin-vue-cli/download/vite-plugin-vue-cli-1.4.0.tgz#f7d5c344532b94b412a3b79b7055067da152d59a"
-  integrity sha1-99XDRFMrlLQSo7ebcFUGfaFS1Zo=
+vite-plugin-vue-cli@1.4.1:
+  version "1.4.1"
+  resolved "https://registry.nlark.com/vite-plugin-vue-cli/download/vite-plugin-vue-cli-1.4.1.tgz#af51fd0c4eb636313dc7ce7da670c88952493b7a"
+  integrity sha1-r1H9DE62NjE9x859pnDIiVJJO3o=
   dependencies:
     "@babel/core" "^7.12.10"
     "@babel/plugin-transform-typescript" "^7.12.1"

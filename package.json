@@ -42,7 +42,7 @@
     "vite-plugin-eslint": "1.3.0",
     "vite-plugin-html-template": "1.0.4",
     "vite-plugin-mpa": "1.1.0",
-    "vite-plugin-vue-cli": "1.4.0",
+    "vite-plugin-vue-cli": "1.4.1",
     "vite-plugin-vue2": "1.8.1",
     "vls": "0.7.4"
   },
