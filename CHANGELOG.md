@@ -1,3 +1,13 @@
+<a name="1.5.0"></a>
+# [1.5.0](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v1.4.11...v1.5.0) (2021-10-12)
+
+
+### Bug Fixes
+
+* process.env issue and use vite 2.6+ for SFC template ts support ([#48](https://github.com/IndexXuan/vue-cli-plugin-vite/issues/48) [#52](https://github.com/IndexXuan/vue-cli-plugin-vite/issues/52)) ([010c24b](https://github.com/IndexXuan/vue-cli-plugin-vite/commit/010c24b))
+
+
+
 <a name="1.4.11"></a>
 ## [1.4.11](https://github.com/IndexXuan/vue-cli-plugin-vite/compare/v1.4.10...v1.4.11) (2021-09-22)
 
